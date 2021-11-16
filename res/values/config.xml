@@ -26,4 +26,7 @@
 
     <!-- App intent -->
     <string name="config_account_intent_uri" translatable="false">intent:#Intent;action=com.android.settings.action.VIEW_ACCOUNT;category=android.intent.category.DEFAULT;launchFlags=0x8000;S.extra.callingPackageName=com.android.settings;end</string>
+
+    <!-- Whether to show Smart Storage toggle -->
+    <bool name="config_show_smart_storage_toggle">false</bool>
 </resources>
