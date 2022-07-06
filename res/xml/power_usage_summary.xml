@@ -67,6 +67,12 @@
         android:summary="@string/battery_percent_summary"
         android:fragment="com.android.settings.fuelgauge.StatusBarBatterySettings"/>
 
+    <SwitchPreference
+        android:key="enhanced_usage_feature"
+        android:title="@string/enhanced_usage_feature"
+        android:summary="@string/enhanced_usage_feature_summary"
+        settings:controller="com.statix.android.settings.fuelgauge.EnhancedUsageFeatureController" />
+
     <com.android.settingslib.widget.FooterPreference
         android:key="power_usage_footer"
         android:title="@string/battery_footer_summary"
