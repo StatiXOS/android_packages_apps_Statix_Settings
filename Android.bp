@@ -26,9 +26,6 @@ android_library {
 
     srcs: ["src/**/*.java"],
     static_libs: [
-        "accountfeatureprovidergoogle",
-        "columbus-settingsgoogle",
-        "powerusagefeaturegoogle",
         "Settings-core",
     ],
     resource_dirs: [
@@ -66,22 +63,4 @@ android_app {
     ],
     manifest: ":Settings_manifest",
     additional_manifests: ["AndroidManifest.xml"],
-}
-
-java_import {
-    name: "accountfeatureprovidergoogle",
-    jars: ["libs/accountfeatureprovidergoogle.jar"],
-    sdk_version: "current",
-}
-
-java_import {
-    name: "columbus-settingsgoogle",
-    jars: ["libs/columbus-settings.jar"],
-    sdk_version: "current",
-}
-
-java_import {
-    name: "powerusagefeaturegoogle",
-    jars: ["libs/powerusagefeaturegoogle.jar"],
-    sdk_version: "current",
 }
