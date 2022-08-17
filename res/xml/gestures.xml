@@ -27,12 +27,6 @@
         settings:controller="com.android.settings.gestures.AssistGestureSettingsPreferenceController" />
 
     <Preference
-        android:key="gesture_columbus"
-        android:title="@string/columbus_title"
-        android:fragment="com.google.android.settings.gestures.columbus.ColumbusSettings"
-        settings:controller="com.google.android.settings.gestures.columbus.ColumbusPreferenceController" />
-
-    <Preference
         android:key="gesture_swipe_down_fingerprint_input_summary"
         android:title="@string/fingerprint_swipe_for_notifications_title"
         android:fragment="com.android.settings.gestures.SwipeToNotificationSettings"
@@ -105,7 +99,7 @@
         android:fragment="com.android.settings.gestures.PowerMenuSettings"
         settings:controller="com.android.settings.gestures.PowerMenuPreferenceController" />
 
-    <com.android.settings.widget.PrimarySwitchPreference
+    <com.android.settingslib.PrimarySwitchPreference
         android:key="gesture_prevent_ringing_summary"
         android:title="@string/gesture_prevent_ringing_screen_title"
         android:fragment="com.android.settings.gestures.PreventRingingGestureSettings"
