@@ -21,10 +21,9 @@
     android:key="power_button_torch_screen"
     android:title="@string/power_button_torch_title">
 
-    <com.android.settings.widget.VideoPreference
+    <com.android.settingslib.widget.IllustrationPreference
         android:key="gesture_power_button_torch_video"
-        app:animation="@raw/power_button_torch"
-        app:preview="@raw/power_button_torch" />
+        app:lottie_rawRes="@raw/lottie_power_button_torch" />
 
     <SwitchPreference
         android:key="power_button_torch"
