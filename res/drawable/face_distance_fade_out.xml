@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/res_0x7f020061_face_distance_fade_out__0">
+    <target android:name="_R_G_L_21_G_D_0_P_0" android:animation="@drawable/res_0x7f020062_face_distance_fade_out__1"/>
+    <target android:name="_R_G_L_20_G_D_0_P_0" android:animation="@drawable/res_0x7f02006d_face_distance_fade_out__2"/>
+    <target android:name="_R_G_L_19_G_D_0_P_0" android:animation="@drawable/res_0x7f020072_face_distance_fade_out__3"/>
+    <target android:name="_R_G_L_18_G_D_0_P_0" android:animation="@drawable/res_0x7f020073_face_distance_fade_out__4"/>
+    <target android:name="_R_G_L_17_G_D_0_P_0" android:animation="@drawable/res_0x7f020074_face_distance_fade_out__5"/>
+    <target android:name="_R_G_L_16_G_D_0_P_0" android:animation="@drawable/res_0x7f020075_face_distance_fade_out__6"/>
+    <target android:name="_R_G_L_15_G_D_0_P_0" android:animation="@drawable/res_0x7f020076_face_distance_fade_out__7"/>
+    <target android:name="_R_G_L_14_G_D_0_P_0" android:animation="@drawable/res_0x7f020077_face_distance_fade_out__8"/>
+    <target android:name="_R_G_L_13_G_D_0_P_0" android:animation="@drawable/res_0x7f020078_face_distance_fade_out__9"/>
+    <target android:name="_R_G_L_12_G_D_0_P_0" android:animation="@drawable/res_0x7f020063_face_distance_fade_out__10"/>
+    <target android:name="_R_G_L_11_G_D_0_P_0" android:animation="@drawable/res_0x7f020064_face_distance_fade_out__11"/>
+    <target android:name="_R_G_L_10_G_D_0_P_0" android:animation="@drawable/res_0x7f020065_face_distance_fade_out__12"/>
+    <target android:name="_R_G_L_9_G_D_0_P_0" android:animation="@drawable/res_0x7f020066_face_distance_fade_out__13"/>
+    <target android:name="_R_G_L_8_G_D_0_P_0" android:animation="@drawable/res_0x7f020067_face_distance_fade_out__14"/>
+    <target android:name="_R_G_L_7_G_D_0_P_0" android:animation="@drawable/res_0x7f020068_face_distance_fade_out__15"/>
+    <target android:name="_R_G_L_6_G_D_0_P_0" android:animation="@drawable/res_0x7f020069_face_distance_fade_out__16"/>
+    <target android:name="_R_G_L_5_G_D_0_P_0" android:animation="@drawable/res_0x7f02006a_face_distance_fade_out__17"/>
+    <target android:name="_R_G_L_4_G_D_0_P_0" android:animation="@drawable/res_0x7f02006b_face_distance_fade_out__18"/>
+    <target android:name="_R_G_L_3_G_D_0_P_0" android:animation="@drawable/res_0x7f02006c_face_distance_fade_out__19"/>
+    <target android:name="_R_G_L_2_G_D_0_P_0" android:animation="@drawable/res_0x7f02006e_face_distance_fade_out__20"/>
+    <target android:name="_R_G_L_1_G_D_0_P_0" android:animation="@drawable/res_0x7f02006f_face_distance_fade_out__21"/>
+    <target android:name="_R_G_L_0_G_D_0_P_0" android:animation="@drawable/res_0x7f020070_face_distance_fade_out__22"/>
+    <target android:name="time_group" android:animation="@drawable/res_0x7f020071_face_distance_fade_out__23"/>
+</animated-vector>

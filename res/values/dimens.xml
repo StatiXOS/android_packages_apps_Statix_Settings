@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2022 StatiXOS
+ SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Face Unlock -->
+    <dimen name="face_error_text_appear_distance">16dp</dimen>
+    <dimen name="face_preview_scale">1</dimen>
+    <dimen name="face_preview_translate_x">-130</dimen>
+    <dimen name="face_preview_translate_y">-460</dimen>
+</resources>
