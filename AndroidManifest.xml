@@ -47,5 +47,17 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.statix.android.settings.fuelgauge.batterysaver.SmartPixels" />
         </activity>
+
+        <!-- Face Unlock -->
+        <activity android:theme="@style/SudThemeGlif.Light" android:name="com.statix.android.settings.biometrics.face.FaceEnrollTrampoline" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/SudThemeGlif.Light" android:name="com.statix.android.settings.biometrics.face.FaceEnrollEnrolling" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/SudThemeGlif.Light" android:name="com.statix.android.settings.biometrics.face.FaceEnrollParticipation" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/SudThemeGlif.Light" android:name="com.statix.android.settings.biometrics.face.FaceEnrollConfirmation" android:exported="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.statix.android.settings.action.CONFIRM_FACE_ENROLLMENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>
