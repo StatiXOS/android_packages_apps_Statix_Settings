@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2022 StatiXOS
+ SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Face Unlock -->
+    <style name="SudGlifButton.Primary" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:theme">@style/SudGlifButton.Primary</item>
+        <item name="android:buttonStyle">@style/SudGlifButton.Primary</item>
+        <item name="android:paddingLeft">@dimen/sud_glif_button_padding</item>
+        <item name="android:paddingRight">@dimen/sud_glif_button_padding</item>
+        <item name="android:textAllCaps">?attr/sudButtonAllCaps</item>
+        <item name="android:fontFamily">?attr/sudButtonFontFamily</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:buttonCornerRadius">?attr/sudButtonCornerRadius</item>
+        <item name="buttonStyle">@style/SudGlifButton.Primary</item>
+        <item name="textAllCaps">?attr/sudButtonAllCaps</item>
+    </style>
+
+    <style name="SudGlifButton.Secondary" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:theme">@style/SudGlifButton.Secondary</item>
+        <item name="android:buttonStyle">@style/SudGlifButton.Secondary</item>
+        <item name="android:paddingLeft">@dimen/sud_glif_button_padding</item>
+        <item name="android:paddingRight">@dimen/sud_glif_button_padding</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:textAllCaps">?attr/sudButtonAllCaps</item>
+        <item name="android:fontFamily">?attr/sudButtonFontFamily</item>
+        <item name="android:colorControlHighlight">@color/sud_flat_button_highlight</item>
+        <item name="android:buttonCornerRadius">?attr/sudButtonCornerRadius</item>
+        <item name="buttonStyle">@style/SudGlifButton.Secondary</item>
+        <item name="colorControlHighlight">@color/sud_flat_button_highlight</item>
+        <item name="textAllCaps">?attr/sudButtonAllCaps</item>
+    </style>
+
+    <style name="TextAppearance.FaceErrorText" parent="@android:style/TextAppearance.Material.Body1">
+        <item name="android:textColor">?android:attr/colorError</item>
+    </style>
+
+</resources>
