@@ -31,4 +31,41 @@
     <string name="power_button_torch_title">Quick torch</string>
     <string name="power_button_torch_summary">When the screen is off, long-pressing power button will enable torch</string>
 
+    <!-- Face Unlock -->
+    <string name="config_face_enroll_traffic_light_package"/>
+    <string name="face_consent">I agree</string>
+    <string name="face_enrolling_center_head">Fit your face in the inner frame</string>
+    <string name="face_enrolling_confirm_help_debug">Confirm</string>
+    <string name="face_enrolling_do_it_later">Do it later</string>
+    <string name="face_enrolling_gaze_dialog_cancel">Cancel</string>
+    <string name="face_enrolling_gaze_dialog_continue">Set up without eyes open</string>
+    <string name="face_enrolling_gaze_dialog_message">Do you want to set up Face Unlock without requiring your eyes to be open? If you set up this way, someone can unlock your phone by pointing it at your face when you’re not aware.</string>
+    <string name="face_enrolling_gaze_dialog_title">Set up without eyes open</string>
+    <string name="face_enrolling_participation_description">Do you want to provide droidfood feedback for Face Unlock? We need data from a diverse set of users using the feature in real-world scenarios to make sure our Face Unlock works equally well for all our users.\n\nIf you volunteer to participate, data collected from unlock attempts (e.g. facial imagery) will be made available in the preinstalled Overlay data collection app. Your facial imagery data will be uploaded to and shared with Google ONLY upon your review and explicit consent in the Overlay app. Model performance metadata from unlock attempts will be collected via Android metrics.</string>
+    <string name="face_enrolling_participation_title">Help make Face Unlock better</string>
+    <string name="face_enrolling_skip_help_debug">Skip</string>
+    <string name="face_enrolling_title">Hold the phone still. Rotate your head. Go slow.</string>
+    <string name="face_enrolling_title_accessibility">Look directly at your phone</string>
+    <string name="face_enrolling_too_close">Move phone farther away</string>
+    <string name="face_enrolling_too_far">Move phone closer</string>
+    <string name="face_enrolling_too_high">Move phone lower</string>
+    <string name="face_enrolling_too_left">Move phone to your right</string>
+    <string name="face_enrolling_too_low">Move phone higher</string>
+    <string name="face_enrolling_too_right">Move phone to your left</string>
+    <string name="face_enrolling_turn_head_to_arrow">Turn your head toward the arrow</string>
+    <string name="face_enrolling_turned_too_far">Turn head a little less</string>
+    <string name="security_settings_face_enroll_finish_title">Looks good!</string>
+    <string name="security_settings_face_enroll_finish_description">Now you can use your face to unlock your phone or verify it’s you, like when you sign in to apps or approve a purchase</string>
+    <string name="security_settings_face_enroll_partial_message">To improve performance, you can set up Face Unlock again in Settings</string>
+    <string name="security_settings_face_enroll_partial_start_over">Start over</string>
+    <string name="security_settings_face_enroll_partial_title">Face Unlock setup finished</string>
+    <string name="security_settings_face_enroll_timeout_message">Try fast setup instead. Keep in mind, your head may need to be more directly in front of your phone when using Face Unlock.\n\nTo improve performance, you can set up Face Unlock again in Settings.</string>
+    <string name="security_settings_face_enroll_timeout_title">Can’t continue setup</string>
+    <string name="security_settings_face_enroll_timeout_try_again">Try again</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">Use fast setup</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">Exit setup</string>
+    <string name="security_settings_face_enroll_too_hot_message">Face Unlock setup can’t be completed because the phone is too hot. Try again later when the phone cools down.</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Skip Face Unlock</string>
+    <string name="security_settings_face_enroll_too_hot_title">Phone is too hot</string>
+
 </resources>

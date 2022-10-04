@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2022 StatiXOS
+ SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Face Unlock -->
+    <color name="face_enroll_single_capture_rotating_1">#ff1a73e8</color>
+    <color name="face_enroll_single_capture_rotating_2">#ff669df6</color>
+    <color name="face_enroll_single_capture_rotating_3">#ffaecbfa</color>
+    <color name="face_enroll_single_capture_rotating_4">#ffe8f0fe</color>
+    <color name="face_enroll_cell_enrolled">#14ffffff</color>
+    <color name="face_enroll_cell_no_activity_end">#ffd2e3fc</color>
+    <color name="face_enroll_cell_no_activity_start">#00d2e3fc</color>
+    <color name="face_enroll_cell_not_enrolled">#4285f4</color>
+    <color name="face_enroll_cell_not_enrolled_primary">#b24285f4</color>
+    <color name="face_enroll_cell_not_enrolled_secondary">#00ffffff</color>
+    <color name="face_enroll_cursor_acquired">#ffffffff</color>
+    <color name="face_enroll_cursor_gone">#00ffffff</color>
+    <color name="face_enroll_cursor_shadow">#ff979797</color>
+    <color name="face_enroll_grid">#e0dadec0</color>
+    <color name="face_enroll_indicator">#ff1a73e8</color>
+    <color name="face_enroll_no_activity_gone">#00000000</color>
+    <color name="face_enroll_no_activity_showing">#6637474f</color>
+    <color name="face_enroll_check_color">#42a5f5</color>
+    <color name="blue_500">#4285f4</color>
+
+</resources>

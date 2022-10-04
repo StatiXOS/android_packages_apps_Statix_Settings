@@ -59,4 +59,7 @@
         <item>8</item>
     </string-array>
 
+    <!-- Face Unlock -->
+    <array name="face_enroll_primary_buckets"> </array>
+
 </resources>
