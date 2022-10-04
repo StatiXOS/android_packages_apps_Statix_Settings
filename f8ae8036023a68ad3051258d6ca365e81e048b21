@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "de7b1d3d_533fac70",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000013
+      },
+      "writtenOn": "2022-10-04T02:11:55Z",
+      "side": 1,
+      "message": "resource android:style/TextAppearance.DeviceDefault.Notification.Reply is private.\n\nalso the java part is almost surely fucked up",
+      "revId": "f8ae8036023a68ad3051258d6ca365e81e048b21",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    }
+  ]
+}
