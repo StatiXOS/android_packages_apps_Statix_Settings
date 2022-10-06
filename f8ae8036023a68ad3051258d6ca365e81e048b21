@@ -16,6 +16,23 @@
       "message": "resource android:style/TextAppearance.DeviceDefault.Notification.Reply is private.\n\nalso the java part is almost surely fucked up",
       "revId": "f8ae8036023a68ad3051258d6ca365e81e048b21",
       "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e024c98b_f124ecd9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2022-10-06T21:10:34Z",
+      "side": 1,
+      "message": "we should probably allocate a dedicated repo for face unlock resources (and potentially more to be RE\u0027d stuff) since none of the devices we have other than the pixel 4 of course have face unlock (and the other stuff).",
+      "revId": "f8ae8036023a68ad3051258d6ca365e81e048b21",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
     }
   ]
 }
