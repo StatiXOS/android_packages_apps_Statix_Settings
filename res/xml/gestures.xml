@@ -34,6 +34,13 @@
         settings:controller="com.android.settings.gestures.SwipeToNotificationPreferenceController" />
 
     <Preference
+        android:key="gesture_active_edge_summary"
+        android:title="@string/elmyra_settings_entry_title"
+        android:summary="@string/elmyra_settings_summary_placeholder"
+        android:fragment="com.statix.android.settings.elmyra.ElmyraSettingsFragment"
+        settings:controller="com.statix.android.settings.elmyra.ElmyraSettingsPreferenceController" />
+
+    <Preference
         android:key="swipe_to_screenshot_summary"
         android:title="@string/swipe_to_screenshot_title"
         android:fragment="com.statix.android.settings.gestures.SwipeToScreenshotGestureSettings"

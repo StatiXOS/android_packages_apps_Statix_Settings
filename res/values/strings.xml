@@ -14,6 +14,24 @@
     <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
     <string name="global_actions_advanced_reboot_summary">Show additional reboot options in power menu</string>
 
+    <!-- Elmyra -->
+    <!-- Entry points in Settings -->
+    <string name="elmyra_settings_entry_title">Active Edge</string>
+    <string name="elmyra_settings_entry_summary_on">On / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="elmyra_settings_entry_summary_off">Off</string>
+    <string name="elmyra_settings_summary_placeholder" translatable="false">&#160;</string>
+
+    <!-- Items in Active Edge gesture settings -->
+    <string name="elmyra_setting_enabled_title">Squeeze phone to perform action</string>
+    <string name="elmyra_setting_enabled_summary">To perform an action, squeeze and release the sides of your phone near the bottom</string>
+    <string name="elmyra_setting_sensitivity_title">Sensitivity</string>
+    <string name="elmyra_setting_sensitivity_light">Light squeeze</string>
+    <string name="elmyra_setting_sensitivity_firm">Firm squeeze</string>
+    <string name="elmyra_setting_screen_off_title">Allow when screen is off</string>
+    <string name="elmyra_setting_screen_off_summary">May increase false triggers</string>
+    <string name="elmyra_setting_screen_off_blocked_summary">Blocked by current action</string>
+    <string name="elmyra_setting_action_title">On squeeze</string>
+
     <!-- Smart Pixels -->
     <string name="smart_pixels_title">Smart Pixels</string>
     <string name="smart_pixels_summary">Shut off pixels to reduce power consumption</string>
