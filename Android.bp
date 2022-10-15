@@ -21,15 +21,24 @@ license {
 }
 
 android_library {
+    name: "StatixSettings-res",
+    static_libs: [
+        "elmyra-sysui-shared",
+        "Settings-core",
+    ],
+    resource_dirs: ["res"],
+}
+
+android_library {
     name: "StatixSettings-core",
     platform_apis: true,
 
-    srcs: ["src/**/*.java"],
-    static_libs: [
-        "Settings-core",
+    srcs: [
+        "src/**/*.java",
+        "src/**/*.kt",
     ],
-    resource_dirs: [
-        "res",
+    static_libs: [
+        "StatixSettings-res",
     ],
     manifest: ":Settings_manifest",
 }
@@ -46,7 +55,9 @@ android_app {
         "settings-platform-compat-config",
         "SettingsIntelligenceGooglePrebuilt",
     ],
-    static_libs: ["StatixSettings-core"],
+    static_libs: [
+        "StatixSettings-core",
+    ],
     uses_libs: ["org.apache.http.legacy"],
     optimize: {
         proguard_flags_files: [
