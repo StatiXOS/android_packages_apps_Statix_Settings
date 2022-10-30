@@ -54,5 +54,15 @@
                   android:exported="true"
                   android:screenOrientation="portrait"/>
 
+        <activity android:theme="@style/SudThemeGlif.Light"
+                  android:name="com.statix.android.settings.biometrics.face.FaceEnrollConfirmation"
+                  android:exported="true"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.google.android.settings.action.CONFIRM_FACE_ENROLLMENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>
