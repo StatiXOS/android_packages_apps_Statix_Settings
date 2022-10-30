@@ -47,5 +47,17 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.statix.android.settings.fuelgauge.batterysaver.SmartPixels" />
         </activity>
+
+        <!-- Face enroll -->
+        <activity android:theme="@style/SudThemeGlif.Light"
+                  android:name="com.statix.android.settings.biometrics.face.FaceEnrollActivityDirector"
+                  android:exported="true"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>
