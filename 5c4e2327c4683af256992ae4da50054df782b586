@@ -16,6 +16,24 @@
       "message": "what.",
       "revId": "5c4e2327c4683af256992ae4da50054df782b586",
       "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b2ed44c2_e40dccea",
+        "filename": "res/values-pt-rBR/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2022-11-09T15:09:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5dbbb086_10011e31",
+      "revId": "5c4e2327c4683af256992ae4da50054df782b586",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
     }
   ]
 }
