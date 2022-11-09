@@ -78,7 +78,6 @@
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Require eyes open</string>
     <string name="security_settings_face_enroll_introduction_agree">I agree</string>
     <string name="security_settings_face_enroll_introduction_cancel">Cancel</string>
-    <string name="security_settings_face_enroll_introduction_consent_message">Allow your child to use their face to unlock their phone or verify it’s them. This happens when they sign in to apps, approve a purchase, and more.</string>
     <string name="security_settings_face_enroll_introduction_control_consent_message">You and your child can delete their face model or turn off Face Unlock at any time in Settings. Face models are stored on the phone until they’re deleted.\n\nLearn more at g.co/pixel/faceunlock.</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">You and your child are in control</string>
     <string name="security_settings_face_enroll_introduction_control_message">You can delete your face model or turn off Face Unlock at any time in Settings. Face models are stored on the phone until you delete them.\n\nLearn more at g.co/pixel/faceunlock.</string>

@@ -30,7 +30,6 @@
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Exigir olhos abertos</string>
     <string name="security_settings_face_enroll_introduction_agree">Aceito</string>
     <string name="security_settings_face_enroll_introduction_cancel">Cancelar</string>
-    <string name="security_settings_face_enroll_introduction_consent_message">Permita que a criança use o rosto para desbloquear o smartphone ou confirmar a identidade dela. Isso acontece quando ela faz login em apps, aprova uma compra, entre outras ocasiões.</string>
     <string name="security_settings_face_enroll_introduction_control_consent_message">Você e a criança podem excluir o modelo de rosto dela ou desativar o Desbloqueio facial a qualquer momento nas Configurações. Os modelos de rosto ficam armazenados no smartphone até serem excluídos.\n\nSaiba mais em g.co/pixel/faceunlock.</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Você e a criança estão no controle</string>
     <string name="security_settings_face_enroll_introduction_control_message">Você pode excluir seu modelo de rosto ou desativar o Desbloqueio facial a qualquer momento nas Configurações. Os modelos de rosto ficam armazenados no smartphone até serem excluídos manualmente.\n\nSaiba mais em g.co/pixel/faceunlock.</string>
