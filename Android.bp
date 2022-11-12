@@ -38,6 +38,7 @@ android_library {
         "src/**/*.kt",
     ],
     static_libs: [
+        "adaptivecharging",
         "StatixSettings-res",
     ],
     manifest: ":Settings_manifest",
