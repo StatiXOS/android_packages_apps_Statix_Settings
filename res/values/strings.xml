@@ -13,6 +13,7 @@
     <!-- Adaptive charging -->
     <string name="adaptive_charging">Adaptive Charging</string>
     <string name="adaptive_charging_description">Extend battery lifespan by charging steadily during longer charging periods. Activated based on your usage cycle.</string>
+    <string name="adaptive_charging_time_estimate">Adaptive charging • Full by %1$s</string>
 
     <!-- Global Actions -->
     <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
