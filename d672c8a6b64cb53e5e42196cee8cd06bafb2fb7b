@@ -33,6 +33,23 @@
       "message": "verified on thixel",
       "revId": "d672c8a6b64cb53e5e42196cee8cd06bafb2fb7b",
       "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c92e49f9_15ca44fc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2023-01-11T03:38:56Z",
+      "side": 1,
+      "message": "this strictly needs Turbo to be spoofed on non-Pixel devices. so, unless we figure that out, this can\u0027t be merged.",
+      "revId": "d672c8a6b64cb53e5e42196cee8cd06bafb2fb7b",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
     }
   ]
 }
