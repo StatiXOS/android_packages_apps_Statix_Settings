@@ -55,6 +55,10 @@
     <string name="power_button_torch_title">Quick torch</string>
     <string name="power_button_torch_summary">When the screen is off, long-pressing power button will enable torch</string>
 
+    <!-- Volume button music control -->
+    <string name="volume_button_music_control_title">Playback control</string>
+    <string name="volume_button_music_control_summary">When the screen is off, long-pressing volume keys will skip music tracks</string>
+
     <!-- Face Unlock -->
     <string name="security_settings_face_enroll_consent_introduction_title">Allow Face Unlock</string>
     <string name="security_settings_face_enroll_dialog_ok">OK</string>
