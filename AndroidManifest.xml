@@ -70,6 +70,11 @@
         </activity>
 
 	<!-- Phone and bluetooth device battery data -->
+        <provider android:name="com.statix.android.settings.fuelgauge.BatteryUsageContentProvider"
+                  android:permission="com.google.android.settings.intelligence.BATTERY_DATA"
+                  android:exported="true"
+                  android:multiprocess="false"
+                  android:authorities="com.google.android.settings.fuelgauge.provider"/>
 	<service android:name="com.statix.android.settings.fuelgauge.batterydata.BatteryDataFetchService"
 		 android:permission="android.permission.BIND_JOB_SERVICE"
 		 android:exported="false"
