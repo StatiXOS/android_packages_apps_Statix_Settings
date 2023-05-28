@@ -163,6 +163,14 @@ x
         android:ringtoneType="alarm"
         android:order="-60"/>
 
+    <Preference
+        android:key="clear_calling"
+        android:order="-55"
+        android:summary="@string/clear_calling_topintro"
+        android:title="@string/clear_calling_title"
+        android:fragment="com.statix.android.settings.notification.ClearCallingSettings"
+        settings:controller="com.statix.android.settings.notification.ClearCallingPreferenceController"/>
+
     <!-- Dial pad tones -->
     <SwitchPreference
         android:key="dial_pad_tones"
