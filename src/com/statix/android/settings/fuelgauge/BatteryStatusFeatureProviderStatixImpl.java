@@ -50,7 +50,7 @@ public class BatteryStatusFeatureProviderStatixImpl extends BatteryStatusFeature
                         private boolean mSetStatus;
 
                         @Override
-                        public void onReceiveStatus(int seconds, String stage) {
+                        public void onReceiveStatus(int seconds, int stage) {
                             if (AdaptiveChargingManager.isActive(stage, seconds)) {
                                 batteryPreferenceController.updateBatteryStatus(
                                         mContext.getResources()
