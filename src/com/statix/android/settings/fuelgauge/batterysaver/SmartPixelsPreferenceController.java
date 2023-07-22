@@ -15,18 +15,8 @@
  */
 package com.statix.android.settings.fuelgauge.batterysaver;
 
-import android.content.ContentResolver;
 import android.content.Context;
-import android.os.PowerManager;
-import android.provider.Settings;
-import android.provider.Settings.Global;
 
-import androidx.annotation.VisibleForTesting;
-import androidx.preference.Preference;
-import androidx.preference.PreferenceScreen;
-
-import com.android.settings.R;
-import com.android.settings.Utils;
 import com.android.settings.core.BasePreferenceController;
 
 public class SmartPixelsPreferenceController extends BasePreferenceController {
@@ -45,7 +35,8 @@ public class SmartPixelsPreferenceController extends BasePreferenceController {
     @Override
     public int getAvailabilityStatus() {
         final boolean enableSmartPixels =
-                mContext.getResources().getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
+                mContext.getResources()
+                        .getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
         return enableSmartPixels ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 }

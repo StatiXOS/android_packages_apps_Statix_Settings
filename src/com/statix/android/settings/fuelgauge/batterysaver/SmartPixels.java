@@ -16,29 +16,19 @@
 
 package com.statix.android.settings.fuelgauge.batterysaver;
 
-import android.content.Context;
 import android.content.ContentResolver;
-import android.content.res.Resources;
+import android.content.Context;
 import android.database.ContentObserver;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.UserHandle;
-import android.provider.Settings;
 import android.provider.SearchIndexableResource;
+import android.provider.Settings;
 
-import androidx.preference.Preference;
-import androidx.preference.PreferenceCategory;
-import androidx.preference.PreferenceScreen;
-import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
-import androidx.preference.ListPreference;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.settings.Utils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
@@ -70,14 +60,24 @@ public class SmartPixels extends SettingsPreferenceFragment implements Indexable
     private void updateSwitchPreferences() {
         final ContentResolver resolver = getActivity().getContentResolver();
         if (mSmartPixelsEnabled != null) {
-            boolean spEnabled = Settings.System.getIntForUser(resolver,
-                Settings.System.SMART_PIXELS_ENABLE, 0, UserHandle.USER_CURRENT) == 1;
+            boolean spEnabled =
+                    Settings.System.getIntForUser(
+                                    resolver,
+                                    Settings.System.SMART_PIXELS_ENABLE,
+                                    0,
+                                    UserHandle.USER_CURRENT)
+                            == 1;
             mSmartPixelsEnabled.setChecked(spEnabled);
         }
 
         if (mSmartPixelsPowerSave != null) {
-            boolean spEnabledOnPS = Settings.System.getIntForUser(resolver,
-                Settings.System.SMART_PIXELS_ON_POWER_SAVE, 0, UserHandle.USER_CURRENT) == 1;
+            boolean spEnabledOnPS =
+                    Settings.System.getIntForUser(
+                                    resolver,
+                                    Settings.System.SMART_PIXELS_ON_POWER_SAVE,
+                                    0,
+                                    UserHandle.USER_CURRENT)
+                            == 1;
             mSmartPixelsPowerSave.setChecked(spEnabledOnPS);
         }
     }
@@ -109,10 +109,20 @@ public class SmartPixels extends SettingsPreferenceFragment implements Indexable
         }
 
         public void register() {
-            getActivity().getContentResolver().registerContentObserver(Settings.System.getUriFor(
-                    SMART_PIXELS_ENABLE), false, this, UserHandle.USER_CURRENT);
-            getActivity().getContentResolver().registerContentObserver(Settings.System.getUriFor(
-                    SMART_PIXELS_ON_POWER_SAVE), false, this, UserHandle.USER_CURRENT);
+            getActivity()
+                    .getContentResolver()
+                    .registerContentObserver(
+                            Settings.System.getUriFor(SMART_PIXELS_ENABLE),
+                            false,
+                            this,
+                            UserHandle.USER_CURRENT);
+            getActivity()
+                    .getContentResolver()
+                    .registerContentObserver(
+                            Settings.System.getUriFor(SMART_PIXELS_ON_POWER_SAVE),
+                            false,
+                            this,
+                            UserHandle.USER_CURRENT);
         }
 
         public void unregister() {
@@ -129,14 +139,14 @@ public class SmartPixels extends SettingsPreferenceFragment implements Indexable
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider() {
                 @Override
-                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
-                                                                            boolean enabled) {
+                public List<SearchIndexableResource> getXmlResourcesToIndex(
+                        Context context, boolean enabled) {
                     ArrayList<SearchIndexableResource> result =
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                    if(context.getResources().
-                            getBoolean(com.android.internal.R.bool.config_enableSmartPixels)) {
+                    if (context.getResources()
+                            .getBoolean(com.android.internal.R.bool.config_enableSmartPixels)) {
                         sir.xmlResId = R.xml.smart_pixels;
                     }
                     result.add(sir);

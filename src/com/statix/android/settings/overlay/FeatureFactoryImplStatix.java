@@ -8,7 +8,6 @@ import com.android.settings.fuelgauge.PowerUsageFeatureProvider;
 import com.android.settings.overlay.FeatureFactoryImpl;
 
 import com.google.android.settings.accounts.AccountFeatureProviderGoogleImpl;
-
 import com.statix.android.settings.fuelgauge.BatteryStatusFeatureProviderStatixImpl;
 import com.statix.android.settings.fuelgauge.PowerUsageFeatureProviderStatixImpl;
 
@@ -41,5 +40,4 @@ public final class FeatureFactoryImplStatix extends FeatureFactoryImpl {
         }
         return mPowerUsageFeatureProvider;
     }
-
 }

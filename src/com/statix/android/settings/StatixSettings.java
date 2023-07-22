@@ -16,9 +16,9 @@
 
 package com.statix.android.settings;
 
-/**
- * Top-level Settings activity
- */
+/** Top-level Settings activity */
 public class StatixSettings extends StatixSettingsActivity {
-    public static class SmartPixelsActivity extends StatixSettingsActivity { /* empty */ }
+    public static class SmartPixelsActivity extends StatixSettingsActivity {
+        /* empty */
+    }
 }

@@ -28,7 +28,6 @@ import androidx.preference.Preference;
 
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
-import com.android.settings.slices.Sliceable;
 
 public class StatixVersionPreferenceController extends BasePreferenceController {
 
@@ -59,8 +58,7 @@ public class StatixVersionPreferenceController extends BasePreferenceController 
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(KEY_STATIX_VERSION_PROP,
-                mContext.getString(R.string.unknown));
+        return SystemProperties.get(KEY_STATIX_VERSION_PROP, mContext.getString(R.string.unknown));
     }
 
     @Override
@@ -81,5 +79,4 @@ public class StatixVersionPreferenceController extends BasePreferenceController 
         mContext.startActivity(intent);
         return true;
     }
-
 }

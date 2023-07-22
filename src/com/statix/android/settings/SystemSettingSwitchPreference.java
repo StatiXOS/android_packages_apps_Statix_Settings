@@ -18,8 +18,9 @@
 package com.statix.android.settings;
 
 import android.content.Context;
-import androidx.preference.SwitchPreference;
 import android.util.AttributeSet;
+
+import androidx.preference.SwitchPreference;
 
 public class SystemSettingSwitchPreference extends SwitchPreference {
 
@@ -42,10 +43,12 @@ public class SystemSettingSwitchPreference extends SwitchPreference {
     protected void onSetInitialValue(boolean restoreValue, Object defaultValue) {
         // This is what default TwoStatePreference implementation is doing without respecting
         // real default value:
-        //setChecked(restoreValue ? getPersistedBoolean(mChecked)
+        // setChecked(restoreValue ? getPersistedBoolean(mChecked)
         //        : (Boolean) defaultValue);
         // Instead, we better do
-        setChecked(restoreValue ? getPersistedBoolean((Boolean) defaultValue)
-                : (Boolean) defaultValue);
+        setChecked(
+                restoreValue
+                        ? getPersistedBoolean((Boolean) defaultValue)
+                        : (Boolean) defaultValue);
     }
 }

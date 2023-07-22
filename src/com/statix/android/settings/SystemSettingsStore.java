@@ -69,5 +69,4 @@ public class SystemSettingsStore extends androidx.preference.PreferenceDataStore
     public void putString(String key, String value) {
         Settings.System.putString(mContentResolver, key, value);
     }
-
 }

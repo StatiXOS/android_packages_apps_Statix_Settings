@@ -70,6 +70,4 @@ public class SecureSettingsStore extends androidx.preference.PreferenceDataStore
     public void putString(String key, String value) {
         Settings.Secure.putString(mContentResolver, key, value);
     }
-
 }
-

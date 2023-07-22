@@ -13,5 +13,4 @@ public class StatixSettingsActivity extends SettingsActivity {
         }
         return false;
     }
-
 }

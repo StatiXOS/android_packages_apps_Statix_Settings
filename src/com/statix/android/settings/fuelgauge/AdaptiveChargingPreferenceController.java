@@ -52,5 +52,4 @@ public class AdaptiveChargingPreferenceController extends TogglePreferenceContro
         }
         return true;
     }
-
 }

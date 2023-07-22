@@ -20,7 +20,6 @@ import static android.provider.Settings.System.TORCH_POWER_BUTTON_GESTURE;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
-import android.content.SharedPreferences;
 import android.provider.Settings;
 import android.text.TextUtils;
 
@@ -39,9 +38,9 @@ public class PowerButtonTorchGesturePreferenceController extends GesturePreferen
 
     @Override
     public int getAvailabilityStatus() {
-        return mContext.getPackageManager()
-                .hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH) ? AVAILABLE :
-                        UNSUPPORTED_ON_DEVICE;
+        return mContext.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH)
+                ? AVAILABLE
+                : UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
@@ -56,12 +55,13 @@ public class PowerButtonTorchGesturePreferenceController extends GesturePreferen
 
     @Override
     public boolean setChecked(boolean isChecked) {
-        return Settings.System.putInt(mContext.getContentResolver(), TORCH_POWER_BUTTON_GESTURE,
-                isChecked ? ON : OFF);
+        return Settings.System.putInt(
+                mContext.getContentResolver(), TORCH_POWER_BUTTON_GESTURE, isChecked ? ON : OFF);
     }
 
     @Override
     public boolean isChecked() {
-        return Settings.System.getInt(mContext.getContentResolver(), TORCH_POWER_BUTTON_GESTURE, 0) != 0;
+        return Settings.System.getInt(mContext.getContentResolver(), TORCH_POWER_BUTTON_GESTURE, 0)
+                != 0;
     }
 }

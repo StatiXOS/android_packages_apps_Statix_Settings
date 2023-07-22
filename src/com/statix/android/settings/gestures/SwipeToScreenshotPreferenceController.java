@@ -19,7 +19,6 @@ package com.statix.android.settings.gestures;
 import static android.provider.Settings.System.SWIPE_TO_SCREENSHOT;
 
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.provider.Settings;
 import android.text.TextUtils;
 
@@ -53,8 +52,8 @@ public class SwipeToScreenshotPreferenceController extends GesturePreferenceCont
 
     @Override
     public boolean setChecked(boolean isChecked) {
-        return Settings.System.putInt(mContext.getContentResolver(), SWIPE_TO_SCREENSHOT,
-                isChecked ? ON : OFF);
+        return Settings.System.putInt(
+                mContext.getContentResolver(), SWIPE_TO_SCREENSHOT, isChecked ? ON : OFF);
     }
 
     @Override

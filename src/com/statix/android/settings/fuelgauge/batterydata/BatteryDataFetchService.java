@@ -19,8 +19,6 @@ import androidx.core.app.JobIntentService;
 
 import com.android.settings.fuelgauge.batteryusage.BatteryAppListPreferenceController;
 
-import java.util.List;
-
 public class BatteryDataFetchService extends JobIntentService {
 
     private static final String TAG = "BatteryDataFetchService";
@@ -29,9 +27,10 @@ public class BatteryDataFetchService extends JobIntentService {
     public static BatteryAppListPreferenceController mController;
 
     public static void enqueueWork(final Context context) {
-        AsyncTask.execute(() -> {
-            loadUsageDataSafely(context);
-        });
+        AsyncTask.execute(
+                () -> {
+                    loadUsageDataSafely(context);
+                });
     }
 
     @Override
@@ -48,10 +47,11 @@ public class BatteryDataFetchService extends JobIntentService {
     }
 
     private static void loadUsageData(Context context) {
-        BatteryUsageStats batteryUsageStats = context
-                .getSystemService(BatteryStatsManager.class)
-                .getBatteryUsageStats(new BatteryUsageStatsQuery.Builder()
-                .includeBatteryHistory()
-                .build());
+        BatteryUsageStats batteryUsageStats =
+                context.getSystemService(BatteryStatsManager.class)
+                        .getBatteryUsageStats(
+                                new BatteryUsageStatsQuery.Builder()
+                                        .includeBatteryHistory()
+                                        .build());
     }
 }

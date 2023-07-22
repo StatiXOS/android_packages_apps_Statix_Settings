@@ -22,16 +22,15 @@ import android.hardware.display.AmbientDisplayConfiguration;
 import androidx.annotation.NonNull;
 
 import com.android.settings.aware.AwareFeatureProvider;
-import com.android.settings.core.BasePreferenceController;
 import com.android.settings.gestures.AssistGestureFeatureProvider;
 import com.android.settings.gestures.AssistGestureSettingsPreferenceController;
-import com.android.settings.gestures.SwipeToNotificationPreferenceController;
-import com.android.settings.gestures.DoubleTwistPreferenceController;
 import com.android.settings.gestures.DoubleTapPowerPreferenceController;
+import com.android.settings.gestures.DoubleTapScreenPreferenceController;
+import com.android.settings.gestures.DoubleTwistPreferenceController;
 import com.android.settings.gestures.GesturesSettingPreferenceController;
 import com.android.settings.gestures.PickupGesturePreferenceController;
-import com.android.settings.gestures.DoubleTapScreenPreferenceController;
 import com.android.settings.gestures.PreventRingingParentPreferenceController;
+import com.android.settings.gestures.SwipeToNotificationPreferenceController;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.core.AbstractPreferenceController;
 
@@ -65,10 +64,10 @@ public class StatixGesturesSettingPreferenceController extends GesturesSettingPr
     }
 
     /**
-     * Get all controllers for their availability status when doing getAvailabilityStatus.
-     * Do not use this method to add controllers into fragment, most of below controllers already
-     * convert to TogglePreferenceController, please register them in xml.
-     * The key is fake because those controllers won't be use to control preference.
+     * Get all controllers for their availability status when doing getAvailabilityStatus. Do not
+     * use this method to add controllers into fragment, most of below controllers already convert
+     * to TogglePreferenceController, please register them in xml. The key is fake because those
+     * controllers won't be use to control preference.
      */
     private static List<AbstractPreferenceController> buildAllPreferenceControllers(
             @NonNull Context context) {
@@ -76,15 +75,18 @@ public class StatixGesturesSettingPreferenceController extends GesturesSettingPr
                 new AmbientDisplayConfiguration(context);
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
 
-        controllers.add(new AssistGestureSettingsPreferenceController(context, FAKE_PREF_KEY)
-                .setAssistOnly(false));
+        controllers.add(
+                new AssistGestureSettingsPreferenceController(context, FAKE_PREF_KEY)
+                        .setAssistOnly(false));
         controllers.add(new SwipeToNotificationPreferenceController(context, FAKE_PREF_KEY));
         controllers.add(new DoubleTwistPreferenceController(context, FAKE_PREF_KEY));
         controllers.add(new DoubleTapPowerPreferenceController(context, FAKE_PREF_KEY));
-        controllers.add(new PickupGesturePreferenceController(context, FAKE_PREF_KEY)
-                .setConfig(ambientDisplayConfiguration));
-        controllers.add(new DoubleTapScreenPreferenceController(context, FAKE_PREF_KEY)
-                .setConfig(ambientDisplayConfiguration));
+        controllers.add(
+                new PickupGesturePreferenceController(context, FAKE_PREF_KEY)
+                        .setConfig(ambientDisplayConfiguration));
+        controllers.add(
+                new DoubleTapScreenPreferenceController(context, FAKE_PREF_KEY)
+                        .setConfig(ambientDisplayConfiguration));
         controllers.add(new PreventRingingParentPreferenceController(context, FAKE_PREF_KEY));
         // custom controllers
         controllers.add(new SwipeToScreenshotPreferenceController(context, FAKE_PREF_KEY));

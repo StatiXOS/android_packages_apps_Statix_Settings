@@ -8,7 +8,6 @@ import com.android.settings.R;
 import com.android.settings.fuelgauge.BatteryInfo;
 import com.android.settings.fuelgauge.BatteryPreferenceController;
 import com.android.settings.fuelgauge.BatteryStatusFeatureProviderImpl;
-import com.android.settings.fuelgauge.BatteryUtils;
 
 import com.statix.android.systemui.adaptivecharging.AdaptiveChargingManager;
 
@@ -21,46 +20,59 @@ public class BatteryStatusFeatureProviderStatixImpl extends BatteryStatusFeature
     public BatteryStatusFeatureProviderStatixImpl(Context context) {
         super(context);
         mAdaptiveChargingManager = new AdaptiveChargingManager(context);
-        mContext.getContentResolver().registerContentObserver(Settings.Secure.getUriFor("adaptive_charging_enabled"), false, new ContentObserver(null) {
-            @Override
-            public void onChange(boolean changed) {
-                refreshAdaptiveChargingEnabled();
-            }
-        });
+        mContext.getContentResolver()
+                .registerContentObserver(
+                        Settings.Secure.getUriFor("adaptive_charging_enabled"),
+                        false,
+                        new ContentObserver(null) {
+                            @Override
+                            public void onChange(boolean changed) {
+                                refreshAdaptiveChargingEnabled();
+                            }
+                        });
         refreshAdaptiveChargingEnabled();
     }
 
     private void refreshAdaptiveChargingEnabled() {
-        mAdaptiveChargingEnabledInSettings = mAdaptiveChargingManager.isAvailable() && mAdaptiveChargingManager.getEnabled();
+        mAdaptiveChargingEnabledInSettings =
+                mAdaptiveChargingManager.isAvailable() && mAdaptiveChargingManager.getEnabled();
     }
 
     @Override
-    public boolean triggerBatteryStatusUpdate(final BatteryPreferenceController batteryPreferenceController, final BatteryInfo batteryInfo) {
+    public boolean triggerBatteryStatusUpdate(
+            final BatteryPreferenceController batteryPreferenceController,
+            final BatteryInfo batteryInfo) {
         if (batteryInfo.discharging || !mAdaptiveChargingEnabledInSettings) {
             return false;
         } else {
-            mAdaptiveChargingManager.queryStatus(new AdaptiveChargingManager.AdaptiveChargingStatusReceiver() {
-                private boolean mSetStatus;
+            mAdaptiveChargingManager.queryStatus(
+                    new AdaptiveChargingManager.AdaptiveChargingStatusReceiver() {
+                        private boolean mSetStatus;
 
-                @Override
-                public void onReceiveStatus(int seconds, String stage) {
-                    if (AdaptiveChargingManager.isActive(stage, seconds)) {
-                        batteryPreferenceController.updateBatteryStatus(
-                                mContext.getResources().getString(R.string.adaptive_charging_time_estimate,
-                                    mAdaptiveChargingManager.formatTimeToFull(System.currentTimeMillis() + TimeUnit.SECONDS.toMillis(seconds + 29))),
-                                batteryInfo);
-                        mSetStatus = true;
-                    }
-                }
+                        @Override
+                        public void onReceiveStatus(int seconds, String stage) {
+                            if (AdaptiveChargingManager.isActive(stage, seconds)) {
+                                batteryPreferenceController.updateBatteryStatus(
+                                        mContext.getResources()
+                                                .getString(
+                                                        R.string.adaptive_charging_time_estimate,
+                                                        mAdaptiveChargingManager.formatTimeToFull(
+                                                                System.currentTimeMillis()
+                                                                        + TimeUnit.SECONDS.toMillis(
+                                                                                seconds + 29))),
+                                        batteryInfo);
+                                mSetStatus = true;
+                            }
+                        }
 
-                @Override
-                public void onDestroyInterface() {
-                    if (mSetStatus) {
-                        return;
-                    }
-                    batteryPreferenceController.updateBatteryStatus(null, batteryInfo);
-                }
-            });
+                        @Override
+                        public void onDestroyInterface() {
+                            if (mSetStatus) {
+                                return;
+                            }
+                            batteryPreferenceController.updateBatteryStatus(null, batteryInfo);
+                        }
+                    });
             return true;
         }
     }

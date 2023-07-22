@@ -16,25 +16,19 @@
 
 package com.statix.android.settings.fuelgauge;
 
-import android.content.ContentResolver;
 import android.content.Context;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
 import android.util.SparseIntArray;
 
 import com.android.internal.util.ArrayUtils;
-import com.android.settingslib.fuelgauge.Estimate;
-
-import com.android.settings.fuelgauge.PowerUsageFeatureProviderImpl;
 import com.android.settings.R;
-
+import com.android.settings.fuelgauge.PowerUsageFeatureProviderImpl;
+import com.android.settingslib.fuelgauge.Estimate;
 import com.android.settingslib.utils.PowerUtil;
 
 import java.time.Duration;
-import java.util.List;
 
 public class PowerUsageFeatureProviderStatixImpl extends PowerUsageFeatureProviderImpl {
 
@@ -63,13 +57,15 @@ public class PowerUsageFeatureProviderStatixImpl extends PowerUsageFeatureProvid
     @Override
     public boolean isEnhancedBatteryPredictionEnabled(Context context) {
         try {
-            return mPackageManager.getPackageInfo("com.google.android.apps.turbo",
-                                    PackageManager.MATCH_DISABLED_COMPONENTS).applicationInfo.enabled;
+            return mPackageManager.getPackageInfo(
+                            "com.google.android.apps.turbo",
+                            PackageManager.MATCH_DISABLED_COMPONENTS)
+                    .applicationInfo
+                    .enabled;
         } catch (PackageManager.NameNotFoundException unused) {
             return false;
         }
     }
-
 
     @Override
     public SparseIntArray getEnhancedBatteryPredictionCurve(Context context, long zeroTime) {
@@ -78,8 +74,7 @@ public class PowerUsageFeatureProviderStatixImpl extends PowerUsageFeatureProvid
         Cursor cursor = context.getContentResolver().query(uri, null, null, null, null);
 
         // Return null if cursor is null or empty
-        if (cursor == null || !cursor.moveToFirst())
-            return null;
+        if (cursor == null || !cursor.moveToFirst()) return null;
 
         // Get time/battery data indicies
         int timestamp = cursor.getColumnIndex(TIMESTAMP_COL);
@@ -87,7 +82,7 @@ public class PowerUsageFeatureProviderStatixImpl extends PowerUsageFeatureProvid
 
         // Add time/battery data to a SparseIntArray and shift time data relative to starting time
         while (cursor.moveToNext()) {
-            curve.append((int)(cursor.getLong(timestamp) - zeroTime), cursor.getInt(batteryLevel));
+            curve.append((int) (cursor.getLong(timestamp) - zeroTime), cursor.getInt(batteryLevel));
         }
 
         // Cleanup
@@ -100,15 +95,19 @@ public class PowerUsageFeatureProviderStatixImpl extends PowerUsageFeatureProvid
     }
 
     private Uri getEnhancedBatteryPredictionCurveUri() {
-        return new Uri.Builder().scheme("content")
-                                .authority("com.google.android.apps.turbo.estimated_time_remaining")
-                                .appendPath("discharge_curve").build();
+        return new Uri.Builder()
+                .scheme("content")
+                .authority("com.google.android.apps.turbo.estimated_time_remaining")
+                .appendPath("discharge_curve")
+                .build();
     }
 
     private Uri getEnhancedBatteryPredictionUri() {
-        return new Uri.Builder().scheme("content")
-                                .authority("com.google.android.apps.turbo.estimated_time_remaining")
-                                .appendPath("time_remaining").build();
+        return new Uri.Builder()
+                .scheme("content")
+                .authority("com.google.android.apps.turbo.estimated_time_remaining")
+                .appendPath("time_remaining")
+                .build();
     }
 
     @Override
@@ -119,13 +118,11 @@ public class PowerUsageFeatureProviderStatixImpl extends PowerUsageFeatureProvid
         Cursor cursor = context.getContentResolver().query(uri, null, null, null, null);
 
         // Return null if cursor is null or empty
-        if (cursor == null || !cursor.moveToFirst())
-            return null;
+        if (cursor == null || !cursor.moveToFirst()) return null;
 
         // Check if estimate is usage based
         int colIndex = cursor.getColumnIndex(BATTERY_ESTIMATE_BASED_ON_USAGE_COL);
-        if (colIndex != -1)
-            basedOnUsage = cursor.getInt(colIndex) == 1;
+        if (colIndex != -1) basedOnUsage = cursor.getInt(colIndex) == 1;
 
         // Calculate average discharge time based on average battery life
         colIndex = cursor.getColumnIndex(AVERAGE_BATTERY_LIFE_COL);
@@ -140,8 +137,8 @@ public class PowerUsageFeatureProviderStatixImpl extends PowerUsageFeatureProvid
         }
 
         colIndex = cursor.getColumnIndex(BATTERY_ESTIMATE_COL);
-        Estimate enhancedEstimate = new Estimate(cursor.getLong(colIndex),
-                                                 basedOnUsage, dischargeTime);
+        Estimate enhancedEstimate =
+                new Estimate(cursor.getLong(colIndex), basedOnUsage, dischargeTime);
         cursor.close();
         return enhancedEstimate;
     }
