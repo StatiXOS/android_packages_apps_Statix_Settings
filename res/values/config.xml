@@ -30,6 +30,9 @@
     <!-- Whether to show Smart Storage toggle -->
     <bool name="config_show_smart_storage_toggle">false</bool>
 
+    <!-- Whether to show the Preference for Touch Sensitivity -->
+    <bool name="config_show_touch_sensitivity">false</bool>
+
     <!-- ComponentName to launch a vendor-specific enrollment activity if available -->
     <string name="config_face_enroll">com.android.settings/com.statix.android.settings.biometrics.face.FaceEnrollActivityDirector</string>
 
