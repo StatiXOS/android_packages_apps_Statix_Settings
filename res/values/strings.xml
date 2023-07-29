@@ -62,6 +62,11 @@
     <string name="power_button_torch_title">Quick torch</string>
     <string name="power_button_torch_summary">When the screen is off, long-pressing power button will enable torch</string>
 
+    <!-- Touch Sensitivity -->
+    <string name="keywords_touch_sensitivity">touch, sensitivity, sensitive, screen protector, film, responsive, responsiveness</string>
+    <string name="touch_sensitivity_summary">Increase touch sensitivity and improve touch when using a screen protector</string>
+    <string name="touch_sensitivity_title">Screen protector mode</string>
+
     <!-- Face Unlock -->
     <string name="security_settings_face_enroll_consent_introduction_title">Allow Face Unlock</string>
     <string name="security_settings_face_enroll_dialog_ok">OK</string>
