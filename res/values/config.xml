@@ -44,4 +44,11 @@
 
     <!-- Whether to show clear calling (P22+) -->
     <bool name="config_clear_calling_enabled">false</bool>
+
+    <!-- ThemePicker builds also WallpaperPicker2 source -->
+    <string name="config_wallpaper_picker_package">com.android.wallpaper</string>
+    <string name="config_wallpaper_picker_class">com.android.wallpaper.picker.CategoryPickerActivity</string>
+
+    <!-- Fully-qualified class name for the styles & wallpaper picker activity. -->
+    <string name="config_styles_and_wallpaper_picker_class">com.android.customization.picker.CustomizationPickerActivity</string>
 </resources>
