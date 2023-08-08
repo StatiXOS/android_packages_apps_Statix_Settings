@@ -51,4 +51,7 @@
 
     <!-- Fully-qualified class name for the styles & wallpaper picker activity. -->
     <string name="config_styles_and_wallpaper_picker_class">com.android.customization.picker.CustomizationPickerActivity</string>
+
+    <!-- Whether nfc detection point preview image is available or not. -->
+    <bool name="config_nfc_detection_point">true</bool>
 </resources>
