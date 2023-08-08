@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+    <style name="ContextualSuggestionCardStyle">
+        <item name="cardBackgroundColor">?androidprv:attr/colorAccentPrimary</item>
+        <item name="cardCornerRadius">@dimen/suggestion_card_corner_radius</item>
+        <item name="cardElevation">0.0dip</item>
+    </style>
+    <style name="ContextualSuggestionCardStyle.TwoPane" parent="@style/ContextualSuggestionCardStyle">
+        <item name="cardBackgroundColor">?androidprv:attr/colorSurface</item>
+    </style>
+    <style name="SuggestionCardIcon">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginStart">12.0dip</item>
+        <item name="android:layout_marginEnd">12.0dip</item>
+        <item name="android:layout_alignParentStart">false</item>
+    </style>
+    <style name="SuggestionCardIconStyle">
+        <item name="android:tint">?android:textColorPrimary</item>
+    </style>
+    <style name="SuggestionCardIconStyle.TwoPane" parent="@style/SuggestionCardIconStyle">
+        <item name="android:tint">?android:textColorPrimary</item>
+    </style>
+    <style name="SuggestionCardSummaryColor">
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+    <style name="SuggestionCardText">
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="SuggestionCardTitleColor">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.SuggestionCardSummary" parent="@style/SuggestionCardSummaryColor">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:fontFamily">@*android:string/config_bodyFontFamilyMedium</item>
+    </style>
+    <style name="TextAppearance.SuggestionCardSummary.TwoPane" parent="@style/TextAppearance.SuggestionCardSummary">
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.SuggestionCardTitle" parent="@style/SuggestionCardTitleColor">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFeatureSettings</item>
+    </style>
+    <style name="TextAppearance.SuggestionCardTitle.TwoPane" parent="@style/TextAppearance.SuggestionCardTitle">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+</resources>
