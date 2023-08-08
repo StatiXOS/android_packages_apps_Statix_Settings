@@ -44,4 +44,17 @@
 
     <!-- Whether to show clear calling (P22+) -->
     <bool name="config_clear_calling_enabled">false</bool>
+<<<<<<< HEAD   (95f901 Revert "StatixSettings: Implement PowerUsageFeatureProvider )
+=======
+
+    <!-- ThemePicker builds also WallpaperPicker2 source -->
+    <string name="config_wallpaper_picker_package">com.android.wallpaper</string>
+    <string name="config_wallpaper_picker_class">com.android.wallpaper.picker.CategoryPickerActivity</string>
+
+    <!-- Fully-qualified class name for the styles & wallpaper picker activity. -->
+    <string name="config_styles_and_wallpaper_picker_class">com.android.customization.picker.CustomizationPickerActivity</string>
+
+    <!-- Whether nfc detection point preview image is available or not. -->
+    <bool name="config_nfc_detection_point">true</bool>
+>>>>>>> CHANGE (2e0b5d StatixSettings: Display NFC detection point preview image)
 </resources>
