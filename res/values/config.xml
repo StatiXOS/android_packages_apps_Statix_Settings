@@ -38,4 +38,10 @@
 
     <!-- Traffic light package to use -->
     <string name="config_face_enroll_traffic_light_package"></string>
+
+    <!-- Whether to show a preference item for mobile plan -->
+    <bool name="config_show_mobile_plan">false</bool>
+
+    <!-- Whether to show clear calling (P22+) -->
+    <bool name="config_clear_calling_enabled">false</bool>
 </resources>

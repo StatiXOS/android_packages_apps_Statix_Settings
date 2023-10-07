@@ -5,15 +5,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string-array name="allowlist_hide_background_in_battery_usage">
-        <item>com.google.android.GoogleCamera</item>
-    </string-array>
-    <string-array name="allowlist_hide_entry_in_battery_usage">
-        <item>com.google.android.gms.persistent</item>
-    </string-array>
-    <string-array name="allowlist_hide_summary_in_battery_usage">
-    </string-array>
-
     <!-- Smart Pixels -->
     <string-array name="smart_pixels_percent_strings" translatable="false">
         <item>12</item>

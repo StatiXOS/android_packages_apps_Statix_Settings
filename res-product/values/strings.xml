@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2023 StatiXOS
+ SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Face Unlock -->
+    <string name="security_settings_face_enroll_consent_introduction_title">Allow Face Unlock</string>
+    <string name="security_settings_face_enroll_dialog_ok">OK</string>
+    <string name="security_settings_face_enroll_done">Done</string>
+    <string name="security_settings_face_enroll_education_accessibility_dialog_message">If accessibility Face Unlock is turned off, some setup steps may not work properly with TalkBack.</string>
+    <string name="security_settings_face_enroll_education_accessibility_dialog_negative">Go back</string>
+    <string name="security_settings_face_enroll_education_accessibility_dialog_positive">Continue setup</string>
+    <string name="security_settings_face_enroll_education_message">On the next screen, rotate your head to capture all angles of your face</string>
+    <string name="security_settings_face_enroll_education_start">Start</string>
+    <string name="security_settings_face_enroll_education_title">How to set up Face Unlock</string>
+    <string name="security_settings_face_enroll_education_title_accessibility">Set up Face Unlock</string>
+    <string name="security_settings_face_enroll_education_title_unlock_disabled">Use your face to authenticate</string>
+    <string name="security_settings_face_enroll_enrolling_skip">Skip</string>
+    <string name="security_settings_face_enroll_error_dialog_title">Enrollment was not completed</string>
+    <string name="security_settings_face_enroll_error_generic_dialog_message">Face enrollment didn\'t work.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">Face enrollment time limit reached. Try again.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">Face Unlock setup timed out</string>
+    <string name="security_settings_face_enroll_finish_description">Now you can use your face to unlock your phone or verify it’s you, like when you sign in to apps or approve a purchase</string>
+    <string name="security_settings_face_enroll_finish_title">Looks good!</string>
+    <string name="security_settings_face_enroll_improve_face_alert_body">Delete your current face model to set up Face Unlock again.\n\nYour face model will be permanently and securely deleted.\n\nAfter deletion, you will need your PIN, pattern, or password to unlock your phone or for authentication in apps.</string>
+    <string name="security_settings_face_enroll_improve_face_alert_body_fingerprint">Delete your current face model to set up Face Unlock again.\n\nYour face model will be permanently and securely deleted.\n\nAfter deletion, you will need your fingerprint, PIN, pattern, or password to unlock your phone or for authentication in apps.</string>
+    <string name="security_settings_face_enroll_improve_face_alert_title">Set up Face Unlock</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Setup for limited vision or head motion</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_diversity" />
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Require eyes open</string>
+    <string name="security_settings_face_enroll_introduction_agree">I agree</string>
+    <string name="security_settings_face_enroll_introduction_cancel">Cancel</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">You and your child are in control</string>
+    <string name="security_settings_face_enroll_introduction_control_title">You’re in control</string>
+    <string name="security_settings_face_enroll_introduction_how_title">How it works</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">If your child normally wears eyeglasses, they can wear them during setup.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Glasses or lightly tinted sunglasses are OK.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Keep in mind</string>
+    <string name="security_settings_face_enroll_introduction_message_setup">Use your face to unlock your phone, authorize purchases, or sign in to apps</string>
+    <string name="security_settings_face_enroll_introduction_message_unlock_disabled">Use your face to unlock your phone or approve purchases.\n\nNote: You can’t use your face to unlock this device. For more information, contact your organization’s admin.</string>
+    <string name="security_settings_face_enroll_introduction_more">More</string>
+    <string name="security_settings_face_enroll_introduction_no_thanks">No thanks</string>
+    <string name="security_settings_face_enroll_introduction_title">Set up Face Unlock</string>
+    <string name="security_settings_face_enroll_introduction_title_unlock_disabled">Use your face to authenticate</string>
+    <string name="security_settings_face_enroll_must_re_enroll_subtitle">Improve security and performance</string>
+    <string name="security_settings_face_enroll_must_re_enroll_title">Set up Face Unlock again</string>
+    <string name="security_settings_face_enroll_next">Next</string>
+    <string name="security_settings_face_enroll_partial_message">To improve performance, you can set up Face Unlock again in Settings</string>
+    <string name="security_settings_face_enroll_partial_start_over">Start over</string>
+    <string name="security_settings_face_enroll_partial_title">Face Unlock setup finished</string>
+    <string name="security_settings_face_enroll_repeat_title">Center your face in the circle</string>
+    <string name="security_settings_face_enroll_should_re_enroll_subtitle">Set up Face Unlock again</string>
+    <string name="security_settings_face_enroll_should_re_enroll_title">Improve Face Unlock performance</string>
+    <string name="security_settings_face_enroll_timeout_message">Try fast setup instead. Keep in mind, your head may need to be more directly in front of your phone when using Face Unlock.\n\nTo improve performance, you can set up Face Unlock again in Settings.</string>
+    <string name="security_settings_face_enroll_timeout_title">Can’t continue setup</string>
+    <string name="security_settings_face_enroll_timeout_try_again">Try again</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">Use fast setup</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">Exit setup</string>
+    <string name="security_settings_face_enroll_too_hot_message">Face Unlock setup can’t be completed because the phone is too hot. Try again later when the phone cools down.</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Skip Face Unlock</string>
+    <string name="security_settings_face_enroll_too_hot_title">Phone is too hot</string>
+    <string name="security_settings_face_preference_summary">Face added</string>
+    <string name="security_settings_face_preference_summary_none">Tap to set up face</string>
+    <string name="security_settings_face_preference_title">Face Unlock</string>
+    <string name="security_settings_face_profile_preference_title">Face Unlock for work</string>
+    <string name="security_settings_face_settings_context_subtitle">Use Face Unlock to unlock your phone</string>
+    <string name="security_settings_face_settings_enroll">Set up Face Unlock</string>
+    <string name="security_settings_face_settings_preferences_category">When using Face Unlock</string>
+    <string name="security_settings_face_settings_remove_dialog_details">Your face model will be permanently and securely deleted.\n\nAfter deletion, you will need your PIN, pattern, or password to unlock your phone or for authentication in apps.</string>
+    <string name="security_settings_face_settings_remove_dialog_details_convenience">Your face model will be permanently and securely deleted.\n\nAfter deletion, you will need your PIN, pattern, or password to unlock your phone.</string>
+    <string name="security_settings_face_settings_remove_dialog_title">Delete face model?</string>
+    <string name="security_settings_face_settings_remove_face_model">Delete face model</string>
+    <string name="security_settings_face_settings_require_attention">Require eyes to be open</string>
+    <string name="security_settings_face_settings_require_attention_details">To unlock the phone, your eyes must be open</string>
+    <string name="security_settings_face_settings_require_confirmation">Always require confirmation</string>
+    <string name="security_settings_face_settings_require_confirmation_details">When using Face Unlock in apps, always require confirmation step</string>
+    <string name="security_settings_face_settings_use_face_category">Use Face Unlock for</string>
+
+</resources>

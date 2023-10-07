@@ -26,7 +26,7 @@ android_library {
         "elmyra-sysui-shared",
         "Settings-core",
     ],
-    resource_dirs: ["res"],
+    resource_dirs: ["res", "res-product"],
 }
 
 android_library {
