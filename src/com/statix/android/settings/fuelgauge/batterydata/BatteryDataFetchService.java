@@ -17,14 +17,10 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.core.app.JobIntentService;
 
-import com.android.settings.fuelgauge.batteryusage.BatteryAppListPreferenceController;
-
 public class BatteryDataFetchService extends JobIntentService {
 
     private static final String TAG = "BatteryDataFetchService";
     private static final Intent JOB_INTENT = new Intent("action.LOAD_BATTERY_USAGE_DATA");
-
-    public static BatteryAppListPreferenceController mController;
 
     public static void enqueueWork(final Context context) {
         AsyncTask.execute(

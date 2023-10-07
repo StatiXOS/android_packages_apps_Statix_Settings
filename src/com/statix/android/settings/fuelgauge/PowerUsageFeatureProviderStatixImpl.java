@@ -50,11 +50,6 @@ public class PowerUsageFeatureProviderStatixImpl extends PowerUsageFeatureProvid
     }
 
     @Override
-    public String getAdvancedUsageScreenInfoString() {
-        return mContext.getString(R.string.advanced_battery_graph_subtext);
-    }
-
-    @Override
     public boolean isEnhancedBatteryPredictionEnabled(Context context) {
         try {
             return mPackageManager.getPackageInfo(
