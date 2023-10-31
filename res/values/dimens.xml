@@ -26,5 +26,6 @@
     <dimen name="suggestion_card_text_padding_start">16.0dip</dimen>
     <dimen name="suggestion_card_text_padding_start_two_pane">24.0dip</dimen>
     <dimen name="suggestion_card_text_padding_vertical">18.0dip</dimen>
+    <dimen name="udfps_lottie_translate_y">-500dp</dimen>
 
 </resources>
