@@ -16,6 +16,24 @@
       "message": "we should probably use lineagehw for this, we have support for it so let\u0027s use that instead.",
       "revId": "e43a29a14b55a9858309905e11e1293249c57819",
       "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f8e1ffc4_538df2f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2023-12-18T00:00:33Z",
+      "side": 1,
+      "message": "Got it 👍",
+      "parentUuid": "75d94dea_145dea76",
+      "revId": "e43a29a14b55a9858309905e11e1293249c57819",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
     }
   ]
 }
