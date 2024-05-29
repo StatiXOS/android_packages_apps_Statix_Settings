@@ -38,14 +38,6 @@
         settings:enableCopying="true"
         settings:controller="com.statix.android.settings.deviceinfo.firmwareversion.StatixVersionPreferenceController"/>
 
-    <!-- Device Codename -->
-    <Preference
-        android:key="device_codename"
-        android:title="@string/device_codename"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.statix.android.settings.deviceinfo.firmwareversion.StatixCodenamePreferenceController"/>
-
     <!-- Security patch -->
     <Preference
         android:key="security_key"
