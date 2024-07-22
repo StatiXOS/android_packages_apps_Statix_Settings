@@ -1,4 +1,5 @@
 <resources>
     <color name="face_enroll_check_color">#42a5f5</color>
     <color name="face_enroll_icon_color">#42a5f5</color>
+    <color name="icon_launcher_setting_color">@color/material_blue_500</color>
 </resources>
