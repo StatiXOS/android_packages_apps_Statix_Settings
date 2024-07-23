@@ -16,9 +16,7 @@ public final class FeatureFactoryImplStatix extends FeatureFactoryImpl {
 
     @Override
     public AccountFeatureProvider getAccountFeatureProvider() {
-        if (mAccountFeatureProvider == null) {
-            mAccountFeatureProvider = new AccountFeatureProviderGoogleImpl();
-        }
+        mAccountFeatureProvider = new AccountFeatureProviderGoogleImpl();
         return mAccountFeatureProvider;
     }
 }
