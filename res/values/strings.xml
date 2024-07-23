@@ -28,6 +28,15 @@
     <!-- Dark UI text -->
     <string name="dark_ui_text">Dark theme uses a black background to help keep your battery alive longer. Dark theme schedules wait to turn on until your screen is off.</string>
 
+    <!-- Account type associated with the backup account. Empty for AOSP. [DO NOT TRANSLATE] -->
+    <string name="account_type" translatable="false">com.google</string>
+
+    <!-- Title for preference showing the primary account on the device [CHAR LIMIT=60]-->
+    <string name="my_device_info_account_preference_title">Google Account</string>
+
+    <!-- String for talkback on the account avatar of the search bar.  [CHAR LIMIT=NONE] -->
+    <string name="search_bar_account_avatar_content_description">Profile picture, double tap to open Google Account</string>
+
     <!-- Global Actions -->
     <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
     <string name="global_actions_advanced_reboot_summary">Show additional reboot options in power menu</string>
