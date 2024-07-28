@@ -18,6 +18,15 @@
     <string name="adaptive_charging_time_estimate">Adaptive charging • Full by %1$s</string>
     <string name="keywords_adaptive_charging">charge, charging, smart charging, adaptive charging, battery, battery health</string>
 
+    <!-- Circle to Search -->
+    <string name="search_gesture_category_title">Search</string>
+    <string name="search_gesture_feature_title">Circle to Search</string>
+    <string name="search_long_press_home_button_summary">Touch &amp; hold the home button at the bottom of the screen, then circle or highlight anything to search</string>
+    <string name="search_menu">Search settings</string>
+    <string name="search_menu_title">Search</string>
+    <string name="search_press_hold_gesture_summary">Touch &amp; hold the handle at the bottom of the screen, then circle or highlight anything to search</string>
+    <string name="search_settings">Search</string>
+
     <!-- Clear calling -->
     <string name="clear_calling_footer">To protect your privacy, Clear Calling never sends audio or conversations to Google. Clear Calling is available depending on your Wi‑Fi and mobile network.</string>
     <string name="clear_calling_footer_learn_more_link">https://support.google.com/pixelphone?p=clear_calling</string>
