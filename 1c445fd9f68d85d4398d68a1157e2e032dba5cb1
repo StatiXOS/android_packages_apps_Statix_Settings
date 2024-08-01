@@ -41,6 +41,30 @@
       "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "27477c21_6fa4b13d",
+        "filename": "src/com/statix/android/settings/gestures/ButtonNavigationSettingsGoogleSearchController.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2024-08-01T17:30:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3d45ae1b_770b265f",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 5
+      },
+      "revId": "1c445fd9f68d85d4398d68a1157e2e032dba5cb1",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f21af349_8215bf60",
@@ -54,6 +78,30 @@
       "writtenOn": "2024-08-01T13:11:53Z",
       "side": 1,
       "message": "not needed",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 30,
+        "endChar": 5
+      },
+      "revId": "1c445fd9f68d85d4398d68a1157e2e032dba5cb1",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2c875b32_5973f011",
+        "filename": "src/com/statix/android/settings/gestures/ButtonNavigationSettingsGoogleSearchController.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2024-08-01T17:30:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f21af349_8215bf60",
       "range": {
         "startLine": 27,
         "startChar": 0,
@@ -87,6 +135,30 @@
       "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4506a8b0_b720df41",
+        "filename": "src/com/statix/android/settings/gestures/ButtonNavigationSettingsGoogleSearchController.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2024-08-01T17:30:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a3639612_7c584841",
+      "range": {
+        "startLine": 37,
+        "startChar": 0,
+        "endLine": 40,
+        "endChar": 5
+      },
+      "revId": "1c445fd9f68d85d4398d68a1157e2e032dba5cb1",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "956e8a90_4d6d1d40",
@@ -100,6 +172,30 @@
       "writtenOn": "2024-08-01T13:11:53Z",
       "side": 1,
       "message": "is there anything that uses this? if not, remove",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 50,
+        "endChar": 5
+      },
+      "revId": "1c445fd9f68d85d4398d68a1157e2e032dba5cb1",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9abd3212_00b46b8f",
+        "filename": "src/com/statix/android/settings/gestures/ButtonNavigationSettingsGoogleSearchController.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2024-08-01T17:30:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "956e8a90_4d6d1d40",
       "range": {
         "startLine": 47,
         "startChar": 0,
@@ -133,6 +229,30 @@
       "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "145ffe7e_b9b5dea7",
+        "filename": "src/com/statix/android/settings/gestures/ButtonNavigationSettingsGoogleSearchController.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2024-08-01T17:30:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dc733568_567c01c6",
+      "range": {
+        "startLine": 54,
+        "startChar": 0,
+        "endLine": 54,
+        "endChar": 232
+      },
+      "revId": "1c445fd9f68d85d4398d68a1157e2e032dba5cb1",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6bfab6cc_2f31f06e",
@@ -146,6 +266,30 @@
       "writtenOn": "2024-08-01T13:11:53Z",
       "side": 1,
       "message": "nit: no `this.` needed here",
+      "range": {
+        "startLine": 59,
+        "startChar": 38,
+        "endLine": 59,
+        "endChar": 43
+      },
+      "revId": "1c445fd9f68d85d4398d68a1157e2e032dba5cb1",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1d1bba3c_40210b73",
+        "filename": "src/com/statix/android/settings/gestures/ButtonNavigationSettingsGoogleSearchController.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2024-08-01T17:30:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6bfab6cc_2f31f06e",
       "range": {
         "startLine": 59,
         "startChar": 38,
@@ -179,6 +323,30 @@
       "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d0740ee0_2f56dbc0",
+        "filename": "src/com/statix/android/settings/gestures/ButtonNavigationSettingsGoogleSearchController.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2024-08-01T17:30:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7617b3b5_e63c9a55",
+      "range": {
+        "startLine": 64,
+        "startChar": 16,
+        "endLine": 64,
+        "endChar": 100
+      },
+      "revId": "1c445fd9f68d85d4398d68a1157e2e032dba5cb1",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ae48384b_4c0ab806",
@@ -192,6 +360,30 @@
       "writtenOn": "2024-08-01T13:11:53Z",
       "side": 1,
       "message": "same comments as the other file",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 45
+      },
+      "revId": "1c445fd9f68d85d4398d68a1157e2e032dba5cb1",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "577dc248_1a5fc61e",
+        "filename": "src/com/statix/android/settings/gestures/GestureNavigationSettingsGoogleSearchController.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2024-08-01T17:30:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ae48384b_4c0ab806",
       "range": {
         "startLine": 1,
         "startChar": 0,
@@ -225,6 +417,30 @@
       "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9ac836da_c17b4361",
+        "filename": "src/com/statix/android/settings/gestures/NavigationSettingsGoogleSearchUtil.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2024-08-01T17:30:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fbbd80e9_ecfd8f44",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 64
+      },
+      "revId": "1c445fd9f68d85d4398d68a1157e2e032dba5cb1",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "aac8809c_b3062045",
@@ -248,6 +464,30 @@
       "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea18717c_ad6e7e04",
+        "filename": "src/com/statix/android/settings/gestures/NavigationSettingsGoogleSearchUtil.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2024-08-01T17:30:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "aac8809c_b3062045",
+      "range": {
+        "startLine": 30,
+        "startChar": 0,
+        "endLine": 31,
+        "endChar": 5
+      },
+      "revId": "1c445fd9f68d85d4398d68a1157e2e032dba5cb1",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e1089312_d626e23f",
@@ -261,6 +501,30 @@
       "writtenOn": "2024-08-01T13:11:53Z",
       "side": 1,
       "message": "come up w a better name",
+      "range": {
+        "startLine": 48,
+        "startChar": 19,
+        "endLine": 48,
+        "endChar": 25
+      },
+      "revId": "1c445fd9f68d85d4398d68a1157e2e032dba5cb1",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "22e1f6e1_94b236f7",
+        "filename": "src/com/statix/android/settings/gestures/NavigationSettingsGoogleSearchUtil.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2024-08-01T17:30:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e1089312_d626e23f",
       "range": {
         "startLine": 48,
         "startChar": 19,
