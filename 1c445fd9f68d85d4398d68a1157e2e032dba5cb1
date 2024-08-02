@@ -38,6 +38,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f78dfbdc_f5fbbcfb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2024-08-02T02:43:43Z",
+      "side": 1,
+      "message": "google-java-format with AOSP style 💀",
+      "parentUuid": "46695092_208e7443",
+      "revId": "1c445fd9f68d85d4398d68a1157e2e032dba5cb1",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "3d45ae1b_770b265f",
         "filename": "src/com/statix/android/settings/gestures/ButtonNavigationSettingsGoogleSearchController.java",
         "patchSetId": 7
