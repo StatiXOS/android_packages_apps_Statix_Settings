@@ -54,6 +54,24 @@
       "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a5fb734b_568f9f20",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-08-02T03:32:39Z",
+      "side": 1,
+      "message": "that\u0027s fucking atrocious ☠️",
+      "parentUuid": "f78dfbdc_f5fbbcfb",
+      "revId": "1c445fd9f68d85d4398d68a1157e2e032dba5cb1",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3d45ae1b_770b265f",
@@ -584,6 +602,30 @@
       "writtenOn": "2024-08-01T13:12:17Z",
       "side": 1,
       "message": "refactor this to be the actual lambda please",
+      "range": {
+        "startLine": 111,
+        "startChar": 23,
+        "endLine": 111,
+        "endChar": 49
+      },
+      "revId": "1c445fd9f68d85d4398d68a1157e2e032dba5cb1",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f2001ce3_62762f4d",
+        "filename": "src/com/statix/android/settings/gestures/NavigationSettingsGoogleSearchUtil.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-08-02T03:32:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dc4ca8de_899a25d2",
       "range": {
         "startLine": 111,
         "startChar": 23,
