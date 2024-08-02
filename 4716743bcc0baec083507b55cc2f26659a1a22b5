@@ -24,6 +24,30 @@
       "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "92c5c14c_e0ceda08",
+        "filename": "src/com/statix/android/settings/gestures/ButtonNavigationSettingsGoogleSearchController.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2024-08-02T03:23:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7cd2179f_c15200fa",
+      "range": {
+        "startLine": 42,
+        "startChar": 38,
+        "endLine": 42,
+        "endChar": 39
+      },
+      "revId": "4716743bcc0baec083507b55cc2f26659a1a22b5",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c59f2ca2_527b2677",
@@ -37,6 +61,30 @@
       "writtenOn": "2024-08-02T02:40:02Z",
       "side": 1,
       "message": "this  can just be \n```\n() -\u003e {\ntry {\n            boolean z \u003d\n                    context.getPackageManager().getProperty(\"omni.AWARE\", GSA_PACKAGE).getBoolean();\n            sharedPreferences.edit().putBoolean(\"is_omni_aware\", z).commit();\n            Log.d(\"NavigationSettingsGoogleSearchUtil\", \"isOmniAware\u003d\" + z);\n        } catch (PackageManager.NameNotFoundException e) {\n            sharedPreferences.edit().putBoolean(\"is_omni_aware\", false).apply();\n            Log.d(\"NavigationSettingsGoogleSearchUtil\", \"Failed to get isOmniAware\", e);\n        }\n}\n```\n\njust remember to format",
+      "range": {
+        "startLine": 158,
+        "startChar": 24,
+        "endLine": 164,
+        "endChar": 25
+      },
+      "revId": "4716743bcc0baec083507b55cc2f26659a1a22b5",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c202e3a1_7cdbdc66",
+        "filename": "src/com/statix/android/settings/gestures/NavigationSettingsGoogleSearchUtil.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 164,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2024-08-02T03:23:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c59f2ca2_527b2677",
       "range": {
         "startLine": 158,
         "startChar": 24,
