@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7cd2179f_c15200fa",
+        "filename": "src/com/statix/android/settings/gestures/ButtonNavigationSettingsGoogleSearchController.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-08-02T02:40:02Z",
+      "side": 1,
+      "message": "nit: give this an actual name",
+      "range": {
+        "startLine": 42,
+        "startChar": 38,
+        "endLine": 42,
+        "endChar": 39
+      },
+      "revId": "4716743bcc0baec083507b55cc2f26659a1a22b5",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c59f2ca2_527b2677",
+        "filename": "src/com/statix/android/settings/gestures/NavigationSettingsGoogleSearchUtil.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 164,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-08-02T02:40:02Z",
+      "side": 1,
+      "message": "this  can just be \n```\n() -\u003e {\ntry {\n            boolean z \u003d\n                    context.getPackageManager().getProperty(\"omni.AWARE\", GSA_PACKAGE).getBoolean();\n            sharedPreferences.edit().putBoolean(\"is_omni_aware\", z).commit();\n            Log.d(\"NavigationSettingsGoogleSearchUtil\", \"isOmniAware\u003d\" + z);\n        } catch (PackageManager.NameNotFoundException e) {\n            sharedPreferences.edit().putBoolean(\"is_omni_aware\", false).apply();\n            Log.d(\"NavigationSettingsGoogleSearchUtil\", \"Failed to get isOmniAware\", e);\n        }\n}\n```\n\njust remember to format",
+      "range": {
+        "startLine": 158,
+        "startChar": 24,
+        "endLine": 164,
+        "endChar": 25
+      },
+      "revId": "4716743bcc0baec083507b55cc2f26659a1a22b5",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    }
+  ]
+}
