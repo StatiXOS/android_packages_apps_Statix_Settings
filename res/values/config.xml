@@ -5,6 +5,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- User avatar dialog result broadcast explicit package -->
+    <string name="config_avatar_picker_package" translatable="false">
+        com.google.android.avatarpicker
+    </string>
+
     <!-- Settings intelligence package name -->
     <string name="config_settingsintelligence_package_name" translatable="false">
         com.google.android.settings.intelligence
@@ -13,6 +18,30 @@
     <!-- Settings intelligence interaction log intent action -->
     <string name="config_settingsintelligence_log_action" translatable="false">
         com.google.android.settings.intelligence.LOG_BRIDGE
+    </string>
+
+    <!-- Package Installer package name -->
+    <string name="config_package_installer_package_name" translatable="false">
+        com.google.android.packageinstaller
+    </string>
+
+    <!-- Sound picker package name -->
+    <string name="config_sound_picker_package_name" translatable="false">
+        com.google.android.soundpicker
+    </string>
+
+    <!-- Contacts package name -->
+    <string name="config_contacts_package_name" translatable="false">
+        com.google.android.contacts
+    </string>
+
+    <!-- Emergency app package name -->
+    <string name="config_emergency_package_name" translatable="false">
+        com.google.android.apps.safetyhub
+    </string>
+    <!-- Emergency app intent action -->
+    <string name="config_emergency_intent_action" translatable="false">
+        com.google.android.safetyhub.SAFETY_HUB
     </string>
 
     <!-- Whether to display pSIM conversion menu in Settings.-->
