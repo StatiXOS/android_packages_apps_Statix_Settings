@@ -23,19 +23,11 @@
     android:title="@string/gesture_settings_activity_title"
     settings:keywords="@string/keywords_gesture_navigation_settings">
 
-    <PreferenceCategory
-        android:key="assistant_gesture_category"
-        android:persistent="false"
-        android:title="@string/assistant_gesture_category_title">
-
-        <SwitchPreferenceCompat
-            android:key="assistant_gesture_corner_swipe"
-            android:title="@string/assistant_corner_gesture_title"
-            android:summary="@string/assistant_corner_gesture_summary"
-            settings:controller="com.android.settings.gestures.GestureNavigationSettingsAssistController"
-        />
-
-    </PreferenceCategory>
+    <com.android.settingslib.PrimarySwitchPreference
+        android:fragment="com.statix.android.settings.gestures.SwipeGesturePreferenceFragment"
+        android:key="swipe_gesture_picker"
+        android:title="@string/enable_corner_swipe_preference_title"
+        settings:controller="com.statix.android.settings.gestures.SwipeGesturePreferenceController" />
 
     <PreferenceCategory
         android:key="back_sensitivity_category"
