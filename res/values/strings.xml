@@ -18,6 +18,16 @@
     <string name="adaptive_charging_time_estimate">Adaptive charging • Full by %1$s</string>
     <string name="keywords_adaptive_charging">charge, charging, smart charging, adaptive charging, battery, battery health</string>
 
+    <!-- Assist gesture customization -->
+    <string name="customize_corner_swipe_gesture">Customize corner swipe gesture</string>
+    <string name="enable_corner_swipe_preference_title">Corner swipe options</string>
+    <string name="enable_corner_swipe_title">Enable corner swipe</string>
+    <string name="screenshot_corner_gesture_summary">Swipe up from a bottom corner to take a screenshot</string>
+    <string name="assistant_action_title">Invoke digital assistant</string>
+    <string name="assistant_action_summary">@string/assistant_corner_gesture_summary</string>
+    <string name="screenshot_action_title">Take a screenshot</string>
+    <string name="screenshot_action_summary">@string/screenshot_corner_gesture_summary</string>
+
     <!-- Circle to Search -->
     <string name="search_gesture_category_title">Search</string>
     <string name="search_gesture_feature_summary">Touch and hold the Home button or the navigation handle to search using the content on your screen.</string>
