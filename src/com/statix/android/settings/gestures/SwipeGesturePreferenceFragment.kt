@@ -20,11 +20,11 @@ class SwipeGesturePreferenceFragment : RadioButtonPickerFragment() {
     info: CandidateInfo,
     defaultKey: String,
   ): SelectorWithWidgetPreference {
-    val pref = super.bindPreference(pref, key, info, defaultKey)
+    val boundPref = super.bindPreference(pref, key, info, defaultKey)
     (info as? CandidateInfoExtra)?.let {
-      pref.setSummary(info.loadSummary())
+      boundPref.setSummary(info.loadSummary())
     }
-    return pref
+    return boundPref
   }
 
   override fun onRadioButtonConfirmed(selectedKey: String) {
