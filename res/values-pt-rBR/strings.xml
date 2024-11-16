@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2021 StatiXOS
+ SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- StatiXOS version -->
+    <string name="statix_version">Versão da StatiXOS</string>
+    <string name="statix_version_default">Desconhecido</string>
+    <string name="device_codename">Codinome do dispositivo</string>
+    <string name="device_codename_default">Desconhecido</string>
+    <!-- Adaptive charging -->
+    <string name="adaptive_charging">Carregamento Adaptável</string>
+    <string name="adaptive_charging_description">Aumente a vida útil da bateria carregando-a de forma constante durante períodos de carga mais longos. Ativado com base no seu ciclo de uso.</string>
+    <string name="adaptive_charging_time_estimate">Carregamento adaptativo • Completo por %1$s</string>
+    <string name="keywords_adaptive_charging">carga, carregamento, carregamento inteligente, carregamento adaptável, bateria, vida da bateria</string>
+    <!-- Assist gesture customization -->
+    <string name="customize_corner_swipe_gesture">Personalizar o gesto de deslizar de canto</string>
+    <string name="enable_corner_swipe_preference_title">Opções de deslize no canto</string>
+    <string name="enable_corner_swipe_title">Habilitar deslizar no canto</string>
+    <string name="camera_corner_gesture_summary">Deslize para cima a partir de um canto inferior para abrir a câmera</string>
+    <string name="screenshot_corner_gesture_summary">Deslize para cima de um canto inferior para capturar a tela</string>
+    <string name="assistant_action_title">Invocar assistente digital</string>
+    <string name="camera_action_title">Abrir câmera</string>
+    <string name="screenshot_action_title">Capturar tela</string>
+    <!-- Circle to Search -->
+    <string name="search_gesture_category_title">Pesquisa</string>
+    <string name="search_gesture_feature_summary">Toque e segure o botão Início ou o identificador de navegação para pesquisar usando o conteúdo na tela.</string>
+    <string name="search_gesture_feature_title">Circule para Pesquisar</string>
+    <string name="search_menu">Configurações de pesquisa</string>
+    <string name="search_menu_title">Pesquisa</string>
+    <string name="search_settings">Pesquisa</string>
+    <!-- Clear calling -->
+    <string name="clear_calling_footer">Para proteger a sua privacidade, Limpar Chamada nunca envia áudio ou conversas para o Google. Limpar Chamada está disponível dependendo da sua rede Wi-Fi.</string>
+    <string name="clear_calling_title">Limpar chamadas</string>
+    <string name="clear_calling_toggle">Usar Limpar Chamada</string>
+    <string name="clear_calling_topintro">Reduz os ruídos de fundo durante chamadas</string>
+    <!-- Dark UI text -->
+    <string name="dark_ui_text">O tema escuro usa um fundo preto para ajudar a manter a bateria viva por mais tempo. O tema escuro espera até que a tela esteja desligada.</string>
+    <!-- Account type associated with the backup account. Empty for AOSP. [DO NOT TRANSLATE] -->
+    <!-- Title for preference showing the primary account on the device [CHAR LIMIT=60]-->
+    <string name="my_device_info_account_preference_title">Conta do Google</string>
+    <!-- String for talkback on the account avatar of the search bar.  [CHAR LIMIT=NONE] -->
+    <string name="search_bar_account_avatar_content_description">Foto de perfil, toque duas vezes para abrir a Conta do Google</string>
+    <!-- Global Actions -->
+    <string name="global_actions_advanced_reboot_title">Habilitar o reinício avançado</string>
+    <string name="global_actions_advanced_reboot_summary">Mostrar opções adicionais de reinicialização no menu de energia</string>
+    <!-- Elmyra -->
+    <!-- Entry points in Settings -->
+    <string name="elmyra_settings_entry_title">Borda ativa</string>
+    <string name="elmyra_settings_entry_summary_on">Ligado / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="elmyra_settings_entry_summary_off">Desligado</string>
+    <!-- Items in Active Edge gesture settings -->
+    <string name="elmyra_setting_enabled_title">Apertar o telefone para executar a ação</string>
+    <string name="elmyra_setting_enabled_summary">Para executar uma ação, aperte e solte os lados do seu telefone perto da parte inferior</string>
+    <string name="elmyra_setting_sensitivity_title">Sensibilidade</string>
+    <string name="elmyra_setting_sensitivity_light">Espremer leve</string>
+    <string name="elmyra_setting_sensitivity_firm">Firme aperto</string>
+    <string name="elmyra_setting_screen_off_title">Permitir com a tela desligada</string>
+    <string name="elmyra_setting_screen_off_summary">Pode aumentar as ativações falsas</string>
+    <string name="elmyra_setting_screen_off_blocked_summary">Bloqueado pela ação atual</string>
+    <string name="elmyra_setting_action_title">Ao espremer</string>
+    <string name="category_name_refresh_rate_controls">Taxa de atualização</string>
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_title">Pixels Inteligentes</string>
+    <string name="smart_pixels_summary">Desliga alguns píxeis para reduzir o consumo de energia</string>
+    <string name="smart_pixels_on_power_save_title">Ativar automaticamente na economia de bateria</string>
+    <string name="smart_pixels_on_power_save_summary">Usar os Pixels Inteligentes quando a economia de bateria estiver ativa</string>
+    <string name="smart_pixels_percent">Porcentagem de pixels a desativar</string>
+    <string name="smart_pixels_shift">Prevenir o efeito burn-in a cada deslocamento dos pixels</string>
+    <string name="smart_pixels_warning_text">Pixels Inteligentes é um recurso de economia de energia. Dependendo de quantos pixels você decidir desativar, você poderá ver uma melhoria significativa na vida útil da bateria. Para uma boa experiência do usuário, recomendamos definir a quantidade de pixels desativados para 75 por cento a cada 10 minutos.</string>
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Gerenciador de ícones</string>
+    <string name="icon_manager_summary">Controle de visibilidade dos ícones da barra de status</string>
+    <!-- Swipe to screenshot -->
+    <string name="swipe_to_screenshot_title">Deslize para capturar a tela</string>
+    <string name="swipe_to_screenshot_summary">Deslize 3 dedos para baixo na tela para tirar uma captura de tela</string>
+    <!-- Torch Power button gestures -->
+    <string name="power_button_torch_title">Lanterna rápida</string>
+    <string name="power_button_torch_summary">Quando a tela estiver desligada, segurar o botão liga/desliga irá ativar a lanterna</string>
+</resources>
