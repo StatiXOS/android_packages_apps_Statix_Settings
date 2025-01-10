@@ -18,6 +18,9 @@
     <string name="adaptive_charging_time_estimate">Adaptive charging • Full by %1$s</string>
     <string name="keywords_adaptive_charging">charge, charging, smart charging, adaptive charging, battery, battery health</string>
 
+    <!-- aptX Settings -->
+    <string name="connected_device_codec_preference">Qualcomm® aptX™ Codec preferences</string>
+
     <!-- Assist gesture customization -->
     <string name="customize_corner_swipe_gesture">Customize corner swipe gesture</string>
     <string name="enable_corner_swipe_preference_title">Corner swipe options</string>
