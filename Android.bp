@@ -25,7 +25,10 @@ android_library {
     static_libs: [
         "elmyra-sysui-shared",
     ],
-    resource_dirs: ["res", "res-product"],
+    resource_dirs: [
+        "res",
+        "res-product",
+    ],
     use_resource_processor: true,
 }
 
