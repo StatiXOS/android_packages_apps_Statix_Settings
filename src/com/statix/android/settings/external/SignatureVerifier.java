@@ -1,0 +1,166 @@
+package com.statix.android.settings.external;
+
+import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
+import android.os.Build;
+import android.text.TextUtils;
+import android.util.Log;
+
+import com.android.internal.util.ArrayUtils;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.Arrays;
+
+public abstract class SignatureVerifier {
+    private static final String TAG = "SignatureVerifier";
+
+    private static final byte[] DEBUG_DIGEST_GMSCORE = {
+        25, 117, -78, -15, 113, 119, -68, -119, -91, -33, -13, 31, -98, 100, -90, -54, -30, -127,
+        -91, 61, -63, -47, -43, -101, 29, 20, 127, -31, -56, 42, -6, 0
+    };
+    private static final byte[] RELEASE_DIGEST_GMSCORE = {
+        -16, -3, 108, 91, 65, 15, 37, -53, 37, -61, -75, 51, 70, -56, -105, 47, -82, 48, -8, -18,
+        116, 17, -33, -111, 4, -128, -83, 107, 45, 96, -37, -125
+    };
+    private static final byte[] DEBUG_DIGEST_TIPS = {
+        -85, 24, -24, 44, 97, -94, -43, -117, -41, 24, 20, 119, -68, -97, 117, -88, 33, 77, 23, 98,
+        115, -112, 37, -84, 36, -111, 9, 20, 17, -72, 79, -77
+    };
+    private static final byte[] RELEASE_DIGEST_TIPS = {
+        14, 68, 121, -2, 25, 61, 1, -51, 70, 33, 95, -52, -48, -39, 35, 61, -20, 119, -2, -94, 89,
+        -5, -52, -97, 9, 33, 25, -11, 10, -125, 114, -27
+    };
+    private static final byte[] DEBUG_DIGEST_LAUNCHER = {
+        75, 77, -102, -67, -24, -13, -42, -104, 117, 88, -57, 110, 38, 30, 111, -23, -45, -57, -52,
+        41, -98, -66, -14, 45, 86, -33, 99, 33, -37, -82, 53, 98
+    };
+    private static final byte[] RELEASE_DIGEST_LAUNCHER = {
+        -88, 107, -37, 5, -97, 40, -14, 101, 22, 45, 100, -50, 108, -115, -105, 114, -112, 29, 34,
+        126, 116, 21, -127, -47, -16, 74, 94, -47, 50, -91, 116, -48
+    };
+    private static final byte[] DEBUG_DIGEST_SECURITY_HUB = {
+        -42, 99, -61, 29, 42, 7, -22, -121, -5, 45, -103, 65, -78, -100, -63, 26, 29, -45, 69, 2,
+        120, -33, 97, 67, -9, 92, 47, -27, -126, -44, -27, -90
+    };
+    private static final byte[] RELEASE_DIGEST_SECURITY_HUB = {
+        -72, 79, 119, 107, -46, -7, 110, -113, 33, -88, -26, 74, -66, 121, -6, 66, 79, -63, 44, 127,
+        34, 16, -101, -40, -19, -127, -128, 51, -17, -65, 16, -74
+    };
+    private static final byte[] DEBUG_DIGEST_ASSISTANT_DEV_APP = {
+        25, 117, -78, -15, 113, 119, -68, -119, -91, -33, -13, 31, -98, 100, -90, -54, -30, -127,
+        -91, 61, -63, -47, -43, -101, 29, 20, 127, -31, -56, 42, -6, 0
+    };
+    private static final byte[] ROUTER_TEST_APP = {
+        16, 57, 56, -18, 69, 55, -27, -98, -114, -25, -110, -10, 84, 80, 79, -72, 52, 111, -58, -77,
+        70, -48, -69, -60, 65, 95, -61, 57, -4, -4, -114, -63
+    };
+    private static final byte[] DEBUG_DIGEST_PIXEL_TROUBLESHOOTING = {
+        93, 33, -76, -79, 81, 61, 12, 97, -79, -120, 111, -5, -66, 13, 47, 45, -9, 81, -71, 48, -38,
+        56, 114, 108, -101, 6, 15, 14, 91, 14, -61, 11
+    };
+    private static final byte[] RELEASE_DIGEST_PIXEL_TROUBLESHOOTING = {
+        50, 87, -43, -103, -92, -99, 44, -106, 26, 71, 28, -87, -124, 63, 89, -45, 65, -92, 5, -120,
+        69, -125, -4, 8, 125, -12, 35, 123, 115, 59, -67, 109
+    };
+
+    public static String verifyCallerIsAllowlisted(Context context, int i) {
+        String isUidAllowlisted = isUidAllowlisted(context, i);
+        if (TextUtils.isEmpty(isUidAllowlisted)) {
+            throw new SecurityException("UID is not Google Signed");
+        }
+        return isUidAllowlisted;
+    }
+
+    private static String isUidAllowlisted(Context context, int i) {
+        String[] packagesForUid = context.getPackageManager().getPackagesForUid(i);
+        if (ArrayUtils.isEmpty(packagesForUid)) {
+            return null;
+        }
+        for (String packageName : packagesForUid) {
+            if (isPackageAllowlisted(context, packageName)) {
+                return packageName;
+            }
+        }
+        return null;
+    }
+
+    public static boolean isPackageAllowlisted(Context context, String packageName) {
+        try {
+            PackageInfo packageInfo = context.getPackageManager().getPackageInfo(packageName, 64);
+            String packageNameToVerify = packageInfo.packageName;
+            if (!verifyAllowlistedPackage(packageNameToVerify)) {
+                Log.e(TAG, "Package name: " + packageNameToVerify + " is not allowlisted.");
+                return false;
+            }
+            return isSignatureAllowlisted(packageInfo);
+        } catch (PackageManager.NameNotFoundException e) {
+            Log.e(TAG, "Could not find package name.", e);
+            return false;
+        }
+    }
+
+    private static boolean isSignatureAllowlisted(PackageInfo packageInfo) {
+        Signature[] signatureArr = packageInfo.signatures;
+        if (signatureArr.length != 1) {
+            Log.w(TAG, "Package has more than one signature.");
+            return false;
+        }
+        return isCertAllowlisted(
+                packageInfo.packageName, signatureArr[0].toByteArray(), Build.IS_DEBUGGABLE);
+    }
+
+    private static boolean isCertAllowlisted(String packageName, byte[] bArr, boolean z) {
+        try {
+            byte[] digest = MessageDigest.getInstance("SHA-256").digest(bArr);
+            if (Log.isLoggable(TAG, Log.DEBUG)) {
+                StringBuilder sb = new StringBuilder();
+                sb.append("Checking cert for ");
+                sb.append(z ? "debug" : "release");
+                Log.d(TAG, sb.toString());
+            }
+            return Arrays.equals(digest, getDigestBytes(packageName, z));
+        } catch (NoSuchAlgorithmException e) {
+            throw new SecurityException("Failed to obtain SHA-256 digest impl.", e);
+        }
+    }
+
+    private static boolean verifyAllowlistedPackage(String packageName) {
+        boolean z;
+        return "com.google.android.googlequicksearchbox".equals(packageName)
+                || "com.google.android.gms".equals(packageName)
+                || "com.google.android.apps.tips".equals(packageName)
+                || "com.google.android.apps.nexuslauncher".equals(packageName)
+                || "com.google.android.apps.security.securityhub".equals(packageName)
+                || "com.google.android.apps.pixel.support".equals(packageName)
+                || ((z = Build.IS_DEBUGGABLE)
+                        && "com.google.android.apps.search.assistant.surfaces.voice.devapp"
+                                .equals(packageName))
+                || ((z && "com.google.android.settings.api.tester".equals(packageName))
+                        || (z && "com.android.settingslib.router.testapp".equals(packageName)));
+    }
+
+    private static byte[] getDigestBytes(String packageName, boolean z) {
+        packageName.hashCode();
+        switch (packageName) {
+            case "com.android.settingslib.router.testapp":
+                return ROUTER_TEST_APP;
+            case "com.google.android.apps.search.assistant.surfaces.voice.devapp":
+                return DEBUG_DIGEST_ASSISTANT_DEV_APP;
+            case "com.google.android.apps.security.securityhub":
+                return z ? DEBUG_DIGEST_SECURITY_HUB : RELEASE_DIGEST_SECURITY_HUB;
+            case "com.google.android.apps.tips":
+                return z ? DEBUG_DIGEST_TIPS : RELEASE_DIGEST_TIPS;
+            case "com.google.android.apps.nexuslauncher":
+                return z ? DEBUG_DIGEST_LAUNCHER : RELEASE_DIGEST_LAUNCHER;
+            case "com.google.android.apps.pixel.support":
+                return z
+                        ? DEBUG_DIGEST_PIXEL_TROUBLESHOOTING
+                        : RELEASE_DIGEST_PIXEL_TROUBLESHOOTING;
+            default:
+                return z ? DEBUG_DIGEST_GMSCORE : RELEASE_DIGEST_GMSCORE;
+        }
+    }
+}
