@@ -24,6 +24,30 @@
       "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "62306117_fcdfa732",
+        "filename": "src/com/statix/android/settings/external/SignatureVerifier.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2025-02-19T03:17:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e71779e1_656f8be2",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 44
+      },
+      "revId": "03646519db3d215836e9177057aef8ee12b5eee0",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5a6f2cdc_738ff8aa",
@@ -37,6 +61,30 @@
       "writtenOn": "2025-02-18T18:17:37Z",
       "side": 1,
       "message": "find the actual value, doesn\u0027t make much sense to have these constants in a signature.",
+      "range": {
+        "startLine": 19,
+        "startChar": 171,
+        "endLine": 19,
+        "endChar": 185
+      },
+      "revId": "03646519db3d215836e9177057aef8ee12b5eee0",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aac17c5a_ff849f48",
+        "filename": "src/com/statix/android/settings/external/SignatureVerifier.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2025-02-19T03:17:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5a6f2cdc_738ff8aa",
       "range": {
         "startLine": 19,
         "startChar": 171,
@@ -70,6 +118,30 @@
       "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "48b8b1e8_6c2c8554",
+        "filename": "src/com/statix/android/settings/external/SignatureVerifier.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2025-02-19T03:17:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e0a159a3_698f5f24",
+      "range": {
+        "startLine": 74,
+        "startChar": 52,
+        "endLine": 74,
+        "endChar": 55
+      },
+      "revId": "03646519db3d215836e9177057aef8ee12b5eee0",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "09319457_176f61fe",
@@ -83,6 +155,30 @@
       "writtenOn": "2025-02-18T18:17:37Z",
       "side": 1,
       "message": "nit: sub with constant",
+      "range": {
+        "startLine": 77,
+        "startChar": 52,
+        "endLine": 77,
+        "endChar": 53
+      },
+      "revId": "03646519db3d215836e9177057aef8ee12b5eee0",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3ce65d11_4fee41f5",
+        "filename": "src/com/statix/android/settings/external/SignatureVerifier.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2025-02-19T03:17:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "09319457_176f61fe",
       "range": {
         "startLine": 77,
         "startChar": 52,
@@ -116,6 +212,30 @@
       "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9903d254_6cfcf2c3",
+        "filename": "src/com/statix/android/settings/external/SignatureVerifier.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2025-02-19T03:17:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e4eaf949_128ed14e",
+      "range": {
+        "startLine": 91,
+        "startChar": 0,
+        "endLine": 91,
+        "endChar": 511
+      },
+      "revId": "03646519db3d215836e9177057aef8ee12b5eee0",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2e65e384_91dccd38",
@@ -129,6 +249,30 @@
       "writtenOn": "2025-02-18T18:17:37Z",
       "side": 1,
       "message": "just use \u0027str\u0027",
+      "range": {
+        "startLine": 97,
+        "startChar": 16,
+        "endLine": 97,
+        "endChar": 30
+      },
+      "revId": "03646519db3d215836e9177057aef8ee12b5eee0",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "812bd9ac_220d68ba",
+        "filename": "src/com/statix/android/settings/external/SignatureVerifier.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1000125
+      },
+      "writtenOn": "2025-02-19T03:17:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2e65e384_91dccd38",
       "range": {
         "startLine": 97,
         "startChar": 16,
