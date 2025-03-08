@@ -5,8 +5,9 @@ import android.accounts.AccountManager;
 import android.content.Context;
 
 import com.android.settings.accounts.AccountFeatureProvider;
-import com.android.settings.R;
 import com.android.settings.overlay.FeatureFactory;
+
+import com.statix.android.settings.R;
 
 public class AccountFeatureProviderGoogleImpl implements AccountFeatureProvider {
     @Override

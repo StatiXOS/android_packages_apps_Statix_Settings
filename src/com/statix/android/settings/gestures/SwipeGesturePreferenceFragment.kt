@@ -4,13 +4,14 @@ import android.os.Bundle
 import android.provider.Settings
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
-import com.android.settings.R
 import com.android.settings.SettingsActivity
 import com.android.settings.utils.CandidateInfoExtra
 import com.android.settings.widget.MainSwitchBarController
 import com.android.settings.widget.RadioButtonPickerFragment
 import com.android.settingslib.widget.CandidateInfo
 import com.android.settingslib.widget.SelectorWithWidgetPreference
+
+import com.statix.android.settings.R
 
 class SwipeGesturePreferenceFragment : RadioButtonPickerFragment() {
 

@@ -3,8 +3,9 @@ package com.statix.android.settings.notification;
 import android.content.Context;
 import android.media.AudioManager;
 
-import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
+
+import com.statix.android.settings.R;
 
 public class ClearCallingPreferenceController extends BasePreferenceController {
     private static final String CCA_ENABLED_FLAG = "CcaConfig__is_enabled";

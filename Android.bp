@@ -21,28 +21,22 @@ license {
 }
 
 android_library {
-    name: "StatixSettings-res",
-    static_libs: [
-        "elmyra-sysui-shared",
-    ],
-    resource_dirs: ["res", "res-product"],
-    use_resource_processor: true,
-}
-
-android_library {
     name: "StatixSettings-core",
     platform_apis: true,
+    manifest: "AndroidManifest-res.xml",
 
+    use_resource_processor: true,
     srcs: [
         "src/**/*.java",
         "src/**/*.kt",
     ],
     static_libs: [
         "adaptivecharging",
+        "elmyra-sysui-shared",
         "Settings-core",
-        "StatixSettings-res",
     ],
     plugins: ["androidx.room_room-compiler-plugin"],
+    resource_dirs: ["res", "res-product"],
 }
 
 android_app {

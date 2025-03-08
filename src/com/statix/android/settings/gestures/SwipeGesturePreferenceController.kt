@@ -4,9 +4,10 @@ import android.content.Context
 import android.provider.Settings
 import androidx.preference.Preference
 import androidx.preference.PreferenceScreen
-import com.android.settings.R
 import com.android.settings.core.BasePreferenceController
 import com.android.settingslib.PrimarySwitchPreference
+
+import com.statix.android.settings.R
 
 class SwipeGesturePreferenceController(private val context: Context) :
   BasePreferenceController(context, SWIPE_GESTURE_PREFERENCE_KEY),
@@ -61,7 +62,7 @@ class SwipeGesturePreferenceController(private val context: Context) :
         when (assistAction) {
           0 -> R.string.screenshot_corner_gesture_summary
           1 -> R.string.camera_corner_gesture_summary
-          else -> R.string.assistant_corner_gesture_summary
+          else -> com.android.settings.R.string.assistant_corner_gesture_summary
         }
       )
     primaryPreference?.setSummary(summary)

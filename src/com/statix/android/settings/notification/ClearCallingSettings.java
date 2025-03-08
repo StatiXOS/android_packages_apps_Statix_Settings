@@ -2,9 +2,10 @@ package com.statix.android.settings.notification;
 
 import android.app.settings.SettingsEnums;
 
-import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
+
+import com.statix.android.settings.R;
 
 public class ClearCallingSettings extends DashboardFragment {
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

@@ -5,11 +5,12 @@ import android.text.TextUtils;
 import android.view.View;
 
 import androidx.preference.PreferenceScreen;
-import androidx.window.R;
 
 import com.android.settings.core.BasePreferenceController;
 import com.android.settingslib.HelpUtils;
 import com.android.settingslib.widget.FooterPreference;
+
+import com.statix.android.settings.R;
 
 public class ClearCallingFooterPreferenceController extends BasePreferenceController {
     @Override

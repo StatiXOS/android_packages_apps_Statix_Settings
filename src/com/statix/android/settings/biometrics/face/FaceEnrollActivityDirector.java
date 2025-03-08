@@ -6,8 +6,9 @@ import android.text.TextUtils;
 
 import androidx.fragment.app.FragmentActivity;
 
-import com.android.settings.R;
 import com.android.settings.biometrics.face.FaceEnrollEnrolling;
+
+import com.statix.android.settings.R;
 
 public class FaceEnrollActivityDirector extends FragmentActivity {
     private Intent mExtras;

@@ -4,7 +4,6 @@ import android.content.Context;
 
 import androidx.preference.Preference;
 
-import com.android.settings.R;
 import com.android.settings.core.TogglePreferenceController;
 
 import com.statix.android.systemui.adaptivecharging.AdaptiveChargingManager;
@@ -37,7 +36,7 @@ public class AdaptiveChargingPreferenceController extends TogglePreferenceContro
 
     @Override
     public int getSliceHighlightMenuRes() {
-        return R.string.menu_key_battery;
+        return com.android.settings.R.string.menu_key_battery;
     }
 
     @Override

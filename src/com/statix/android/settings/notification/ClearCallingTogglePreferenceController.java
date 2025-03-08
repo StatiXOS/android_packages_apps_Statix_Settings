@@ -3,8 +3,9 @@ package com.statix.android.settings.notification;
 import android.content.Context;
 import android.media.AudioManager;
 
-import com.android.settings.R;
 import com.android.settings.widget.SettingsMainSwitchPreferenceController;
+
+import com.statix.android.settings.R;
 
 public class ClearCallingTogglePreferenceController extends SettingsMainSwitchPreferenceController {
     private static final String CCA_ENABLED_FLAG = "CcaConfig__is_enabled";
@@ -20,7 +21,7 @@ public class ClearCallingTogglePreferenceController extends SettingsMainSwitchPr
 
     @Override
     public int getSliceHighlightMenuRes() {
-        return R.string.menu_key_sound;
+        return com.android.settings.R.string.menu_key_sound;
     }
 
     @Override

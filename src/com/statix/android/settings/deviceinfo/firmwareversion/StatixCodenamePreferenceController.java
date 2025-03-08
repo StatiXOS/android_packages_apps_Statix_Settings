@@ -26,7 +26,6 @@ import android.util.Log;
 
 import androidx.preference.Preference;
 
-import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
 public class StatixCodenamePreferenceController extends BasePreferenceController {
@@ -58,6 +57,6 @@ public class StatixCodenamePreferenceController extends BasePreferenceController
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(KEY_DEVICE_CODENAME_PROP, mContext.getString(R.string.unknown));
+        return SystemProperties.get(KEY_DEVICE_CODENAME_PROP, mContext.getString(com.android.settings.R.string.unknown));
     }
 }

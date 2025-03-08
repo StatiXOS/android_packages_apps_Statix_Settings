@@ -29,7 +29,8 @@ import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreferenceCompat
 import com.android.settings.widget.LabeledSeekBarPreference
 import com.android.settings.widget.SeekBarPreference
-import com.statix.android.systemui.elmyra.R
+
+import com.statix.android.settings.R
 import com.statix.android.systemui.elmyra.getAction
 import com.statix.android.systemui.elmyra.getActionName
 import com.statix.android.systemui.elmyra.getAllowScreenOff
@@ -46,7 +47,7 @@ class ElmyraSettingsFragment : PreferenceFragmentCompat() {
   private val settingsObserver = SettingsObserver(Handler(Looper.getMainLooper()))
 
   override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
-    setPreferencesFromResource(com.android.settings.R.xml.elmyra_settings, rootKey)
+    setPreferencesFromResource(R.xml.elmyra_settings, rootKey)
   }
 
   override fun onCreate(savedInstanceState: Bundle?) {
@@ -65,7 +66,7 @@ class ElmyraSettingsFragment : PreferenceFragmentCompat() {
         .contentResolver
         .registerContentObserver(
             uriForSensitivity, false, settingsObserver, UserHandle.USER_CURRENT)
-    findPreference<LabeledSeekBarPreference>(context!!.getString(R.string.pref_key_sensitivity))
+    findPreference<LabeledSeekBarPreference>(context!!.getString(com.statix.android.systemui.elmyra.R.string.pref_key_sensitivity))
         ?.apply {
           setOnPreferenceChangeStopListener(
               object : Preference.OnPreferenceChangeListener {
@@ -73,7 +74,7 @@ class ElmyraSettingsFragment : PreferenceFragmentCompat() {
                   val progress = newValue as Int
                   Settings.System.putInt(
                       context.contentResolver,
-                      context!!.getString(R.string.pref_key_sensitivity),
+                      context!!.getString(com.statix.android.systemui.elmyra.R.string.pref_key_sensitivity),
                       progress)
                   return true
                 }
@@ -94,40 +95,40 @@ class ElmyraSettingsFragment : PreferenceFragmentCompat() {
 
   private fun updateUi() {
     // Enabled
-    findPreference<SwitchPreferenceCompat>(context!!.getString(R.string.pref_key_enabled))?.apply {
+    findPreference<SwitchPreferenceCompat>(context!!.getString(com.statix.android.systemui.elmyra.R.string.pref_key_enabled))?.apply {
       setChecked(getEnabled(context))
     }
 
     // Sensitivity value
-    findPreference<LabeledSeekBarPreference>(context!!.getString(R.string.pref_key_sensitivity))
+    findPreference<LabeledSeekBarPreference>(context!!.getString(com.statix.android.systemui.elmyra.R.string.pref_key_sensitivity))
         ?.apply {
           progress = getSensitivity(context)
           setHapticFeedbackMode(SeekBarPreference.HAPTIC_FEEDBACK_MODE_ON_TICKS)
         }
 
     // Action value and summary
-    findPreference<ListPreference>(context!!.getString(R.string.pref_key_action))?.apply {
+    findPreference<ListPreference>(context!!.getString(com.statix.android.systemui.elmyra.R.string.pref_key_action))?.apply {
       value = getAction(context)
       summary = getActionName(context)
     }
 
     // Screen state based on action
-    findPreference<SwitchPreferenceCompat>(context!!.getString(R.string.pref_key_allow_screen_off))
+    findPreference<SwitchPreferenceCompat>(context!!.getString(com.statix.android.systemui.elmyra.R.string.pref_key_allow_screen_off))
         ?.apply {
           val screenForced =
               getBoolean(
                   context.contentResolver,
-                  getString(R.string.pref_key_allow_screen_off_action_forced),
+                  getString(com.statix.android.systemui.elmyra.R.string.pref_key_allow_screen_off_action_forced),
                   false)
           setEnabled(!screenForced)
           if (screenForced) {
             setSummary(
-                getString(com.android.settings.R.string.elmyra_setting_screen_off_blocked_summary))
+                getString(R.string.elmyra_setting_screen_off_blocked_summary))
             setPersistent(false)
             setChecked(false)
           } else {
             setSummary(
-                context.getString(com.android.settings.R.string.elmyra_setting_screen_off_summary))
+                context.getString(R.string.elmyra_setting_screen_off_summary))
             setPersistent(true)
             setChecked(getAllowScreenOff(context))
           }

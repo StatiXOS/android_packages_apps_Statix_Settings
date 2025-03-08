@@ -4,11 +4,11 @@ import android.content.Context;
 import android.database.ContentObserver;
 import android.provider.Settings;
 
-import com.android.settings.R;
 import com.android.settings.fuelgauge.BatteryInfo;
 import com.android.settings.fuelgauge.BatteryPreferenceController;
 import com.android.settings.fuelgauge.BatteryStatusFeatureProviderImpl;
 
+import com.statix.android.settings.R;
 import com.statix.android.systemui.adaptivecharging.AdaptiveChargingManager;
 
 import java.util.concurrent.TimeUnit;

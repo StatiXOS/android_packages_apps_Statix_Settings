@@ -12,13 +12,13 @@ import android.widget.TextView;
 
 import androidx.fragment.app.FragmentActivity;
 
-import com.android.settings.R;
-
 import com.google.android.setupcompat.template.FooterBarMixin;
 import com.google.android.setupcompat.template.FooterButton;
 import com.google.android.setupcompat.util.WizardManagerHelper;
 import com.google.android.setupdesign.GlifLayout;
 import com.google.android.setupdesign.util.ThemeHelper;
+
+import com.statix.android.settings.R;
 
 public class FaceEnrollConfirmation extends FragmentActivity {
     private FooterBarMixin mFooterBarMixin;
@@ -56,7 +56,7 @@ public class FaceEnrollConfirmation extends FragmentActivity {
                                     }
                                 })
                         .setButtonType(5)
-                        .setTheme(R.style.SudGlifButton_Primary)
+                        .setTheme(com.google.android.setupdesign.R.style.SudGlifButton_Primary)
                         .build());
     }
 
@@ -74,7 +74,7 @@ public class FaceEnrollConfirmation extends FragmentActivity {
 
     @Override
     protected void onApplyThemeResource(Resources.Theme theme, int i, boolean z) {
-        theme.applyStyle(R.style.SetupWizardPartnerResource, true);
+        theme.applyStyle(com.android.settings.R.style.SetupWizardPartnerResource, true);
         super.onApplyThemeResource(theme, i, z);
     }
 

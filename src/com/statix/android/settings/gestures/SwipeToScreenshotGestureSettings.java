@@ -19,10 +19,11 @@ package com.statix.android.settings.gestures;
 import android.content.Context;
 import android.provider.SearchIndexableResource;
 
-import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
+
+import com.statix.android.settings.R;
 
 import java.util.Arrays;
 import java.util.List;

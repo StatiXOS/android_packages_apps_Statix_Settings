@@ -1,8 +1,9 @@
 package com.statix.android.settings.elmyra
 
 import android.content.Context
-import com.android.settings.R
 import com.android.settings.core.BasePreferenceController
+
+import com.statix.android.settings.R
 import com.statix.android.systemui.elmyra.getActionName
 import com.statix.android.systemui.elmyra.getEnabled
 
