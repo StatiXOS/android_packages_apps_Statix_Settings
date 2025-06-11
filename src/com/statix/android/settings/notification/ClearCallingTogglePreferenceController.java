@@ -3,11 +3,11 @@ package com.statix.android.settings.notification;
 import android.content.Context;
 import android.media.AudioManager;
 
-import com.android.settings.widget.SettingsMainSwitchPreferenceController;
+import com.android.settings.core.TogglePreferenceController;
 
 import com.statix.android.settings.R;
 
-public class ClearCallingTogglePreferenceController extends SettingsMainSwitchPreferenceController {
+public class ClearCallingTogglePreferenceController extends TogglePreferenceController {
     private static final String CCA_ENABLED_FLAG = "CcaConfig__is_enabled";
     private static final String CCA_STATUS_KEY = "cca_pixel_enabled";
     private static final String CCA_STATUS_OFF = "cca_pixel_enabled=false";
