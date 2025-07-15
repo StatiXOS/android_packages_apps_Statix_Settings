@@ -5,6 +5,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Battery Saver -->
+    <string name="help_url_battery_saver_settings" translatable="false" product="default">https://support.google.com/pixelphone/?p=battery_saver_settings</string>
+    <string name="help_url_battery_saver_settings" translatable="false" product="tablet">https://support.google.com/googlepixeltablet/?p=battery_saver</string>
+    <string name="smart_battery_summary" product="default">Adaptive Battery learns from your phone usage to continuously optimize how apps use battery. To extend battery life, it may reduce performance and delay notifications.</string>
+    <string name="smart_battery_summary" product="tablet">Adaptive Battery learns from your tablet usage to continuously optimize how apps use battery. To extend battery life, it may reduce performance and delay notifications.</string>
+
     <!-- Face Unlock -->
     <string name="security_settings_face_enroll_consent_introduction_title">Allow Face Unlock</string>
     <string name="security_settings_face_enroll_dialog_ok">OK</string>
