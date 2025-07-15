@@ -50,4 +50,12 @@ public class StatixSettingsApplication extends SettingsApplication {
     protected FeatureFactory getFeatureFactory() {
         return new FeatureFactoryImplStatix();
     }
+
+    @Override
+    protected FixedArrayMap<String, PreferenceScreenMetadataFactory> preferenceScreenFactories() {
+        FixedArrayMap preferenceScreenFactories = super.preferenceScreenFactories();
+        FixedArrayMap fixedArrayMap = StatixSettingsScreenCollector.get();
+        fixedArrayMap.getClass();
+        return preferenceScreenFactories.merge(fixedArrayMap);
+    }
 }

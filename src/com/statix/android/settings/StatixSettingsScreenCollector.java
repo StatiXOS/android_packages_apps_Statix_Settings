@@ -9,7 +9,7 @@ import com.statix.android.settings.deviceinfo.firmwareversion.StatixFirmwareVers
 public abstract class StatixSettingsScreenCollector {
     public static FixedArrayMap get() {
         return new FixedArrayMap(
-                1,
+                4,
                 obj -> {
                     init((OrderedInitializer) obj);
                 });
@@ -21,6 +21,24 @@ public abstract class StatixSettingsScreenCollector {
                 (PreferenceScreenMetadataFactory)
                         context -> {
                             return new StatixFirmwareVersionScreen();
+                        });
+
+        orderedInitializer.put(
+                "adaptive_battery_entry",
+                (PreferenceScreenMetadataFactory) AdaptiveBatteryScreen::new);
+
+        orderedInitializer.put(
+                "battery_saver_schedule",
+                (PreferenceScreenMetadataFactory)
+                        context -> {
+                            return new BatterySaverScheduleScreen();
+                        });
+
+        orderedInitializer.put(
+                "battery_saver_screen",
+                (PreferenceScreenMetadataFactory)
+                        context -> {
+                            return new BatterySaverGoogleScreen();
                         });
     }
 }
