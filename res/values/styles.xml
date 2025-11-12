@@ -29,18 +29,24 @@
     <style name="SuggestionCardTitleColor">
         <item name="android:textColor">?android:textColorPrimary</item>
     </style>
-    <style name="TextAppearance.SuggestionCardSummary" parent="@style/SuggestionCardSummaryColor">
+    <style name="TextAppearance.SuggestionCardSummary" parent="@style/TextAppearance.SettingsLib.LabelMedium">
+        <item name="android:textColor">@color/settingslib_materialColorOnSecondary</item>
+    </style>
+    <style name="TextAppearance.SuggestionCardSummary.Contextual" parent="@style/SuggestionCardSummaryColor">
         <item name="android:textSize">14.0sp</item>
-        <item name="android:fontFamily">@*android:string/config_bodyFontFamilyMedium</item>
+        <item name="android:fontFamily">@*android:string/config_bodyFontFamily</item>
     </style>
     <style name="TextAppearance.SuggestionCardSummary.TwoPane" parent="@style/TextAppearance.SuggestionCardSummary">
-        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:textColor">@android:color/system_on_primary_fixed_variant</item>
     </style>
-    <style name="TextAppearance.SuggestionCardTitle" parent="@style/SuggestionCardTitleColor">
+    <style name="TextAppearance.SuggestionCardTitle" parent="@style/TextAppearance.SettingsLib.TitleMedium.Emphasized">
+        <item name="android:textColor">@color/settingslib_materialColorOnPrimary</item>
+    </style>
+    <style name="TextAppearance.SuggestionCardTitle.Contextual" parent="@style/SuggestionCardTitleColor">
         <item name="android:textSize">20.0sp</item>
-        <item name="android:fontFamily">@*android:string/config_headlineFontFeatureSettings</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
     </style>
     <style name="TextAppearance.SuggestionCardTitle.TwoPane" parent="@style/TextAppearance.SuggestionCardTitle">
-        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textColor">@android:color/system_on_primary_fixed</item>
     </style>
 </resources>

@@ -24,7 +24,8 @@
 
     <com.android.settingslib.widget.IllustrationPreference
         android:key="auto_awesome_battery"
-        settings:lottie_rawRes="@raw/auto_awesome_battery_lottie" />
+        settings:lottie_rawRes="@raw/auto_awesome_battery_lottie"
+        settings:controller="com.android.settings.fuelgauge.AdaptiveBatteryIllustrationPreferenceController"/>
 
     <SwitchPreferenceCompat
          android:title="@string/adaptive_charging"
@@ -52,6 +53,5 @@
     <com.android.settingslib.widget.FooterPreference
         android:key="smart_battery_detail_footer"
         android:title="@string/smart_battery_footer"
-        android:selectable="false"
         settings:searchable="false"/>
 </PreferenceScreen>

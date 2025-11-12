@@ -40,13 +40,13 @@
                 android:id="@android:id/title"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="@style/TextAppearance.SuggestionCardTitle" />
+                android:textAppearance="@style/TextAppearance.SuggestionCardTitle.Contextual" />
 
             <TextView
                 android:id="@android:id/summary"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="@style/TextAppearance.SuggestionCardSummary" />
+                android:textAppearance="@style/TextAppearance.SuggestionCardSummary.Contextual" />
 
         </LinearLayout>
 
