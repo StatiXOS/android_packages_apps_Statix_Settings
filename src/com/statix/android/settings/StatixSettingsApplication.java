@@ -22,6 +22,8 @@ import androidx.annotation.NonNull;
 
 import com.android.settings.SettingsApplication;
 import com.android.settings.overlay.FeatureFactory;
+import com.android.settingslib.metadata.FixedArrayMap;
+import com.android.settingslib.metadata.PreferenceScreenMetadataFactory;
 
 import com.statix.android.settings.overlay.FeatureFactoryImplStatix;
 
@@ -32,6 +34,15 @@ public class StatixSettingsApplication extends SettingsApplication {
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
         FeatureFactory.setFactory(this, getFeatureFactory());
+    }
+
+    /** Returns the factories of preference screen metadata. */
+    @Override
+    protected FixedArrayMap<String, PreferenceScreenMetadataFactory> preferenceScreenFactories() {
+        FixedArrayMap preferenceScreenFactories = super.preferenceScreenFactories();
+        FixedArrayMap fixedArrayMap = StatixSettingsScreenCollector.get();
+        fixedArrayMap.getClass();
+        return preferenceScreenFactories.merge(fixedArrayMap);
     }
 
     @Override
