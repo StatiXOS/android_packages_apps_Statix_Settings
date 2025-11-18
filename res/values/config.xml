@@ -44,6 +44,9 @@
         com.google.android.safetyhub.SAFETY_HUB
     </string>
 
+    <!-- Cell broacast receiver package name -->
+    <string name="config_cell_broadcast_receiver_package" translatable="false">com.google.android.cellbroadcastreceiver</string>
+
     <!-- Whether to display pSIM conversion menu in Settings.-->
     <bool name="config_psim_conversion_menu_enabled">true</bool>
 
