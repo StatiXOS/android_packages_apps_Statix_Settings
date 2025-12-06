@@ -95,4 +95,7 @@
     <string name="power_button_torch_title">Quick torch</string>
     <string name="power_button_torch_summary">When the screen is off, long-pressing power button will enable torch</string>
 
+    <!-- Widgets on lock screen -->
+    <string name="enable_glanceable_hub_toggle_summary">Show widgets when device is locked</string>
+
 </resources>
