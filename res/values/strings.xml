@@ -8,7 +8,7 @@
     <!-- StatiXOS version -->
     <string name="statix_version">StatiXOS version</string>
     <string name="statix_version_default">Unknown</string>
-    <string name="device_codename">Device Codename</string>
+    <string name="device_codename">Device codename</string>
     <string name="device_codename_default">Unknown</string>
     <string name="statix_uri" translatable="false">https://github.com/StatiXOS</string>
 
