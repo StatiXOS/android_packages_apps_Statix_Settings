@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2021 StatiXOS
+ SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- StatiXOS version -->
+    <string name="statix_version">Phiên bản StatiXOS</string>
+    <string name="statix_version_default">Không xác định</string>
+    <string name="device_codename">Tên mã thiết bị</string>
+    <string name="device_codename_default">Không xác định</string>
+
+    <!-- Adaptive charging -->
+    <string name="adaptive_charging">Sạc thích ứng</string>
+    <string name="adaptive_charging_description">Kéo dài thời lượng pin bằng cách sạc đều đặn trong thời gian dài hơn. Tính năng này được kích hoạt dựa trên chu kỳ sử dụng của bạn.</string>
+    <string name="adaptive_charging_time_estimate">Đang sạc thích ứng • Đến %1$s pin sẽ đầy</string>
+    <string name="keywords_adaptive_charging">sạc, sạc pin, sạc thông minh, sạc thích ứng, pin, tình trạng pin</string>
+
+    <!-- Assist gesture customization -->
+    <string name="customize_corner_swipe_gesture">Customize corner swipe gesture</string>
+    <string name="enable_corner_swipe_preference_title">Corner swipe options</string>
+    <string name="enable_corner_swipe_title">Enable corner swipe</string>
+    <string name="camera_corner_gesture_summary">Swipe up from a bottom corner to open camera</string>
+    <string name="screenshot_corner_gesture_summary">Swipe up from a bottom corner to take a screenshot</string>
+    <string name="assistant_action_title">Invoke digital assistant</string>
+    <string name="assistant_action_summary">@string/assistant_corner_gesture_summary</string>
+    <string name="camera_action_title">Open camera</string>
+    <string name="camera_action_summary">@string/camera_corner_gesture_summary</string>
+    <string name="screenshot_action_title">Take a screenshot</string>
+    <string name="screenshot_action_summary">@string/screenshot_corner_gesture_summary</string>
+
+    <!-- Clear calling -->
+    <string name="clear_calling_footer">To protect your privacy, Clear Calling never sends audio or conversations to Google. Clear Calling is available depending on your Wi‑Fi and mobile network.</string>
+    <string name="clear_calling_title">Clear Calling</string>
+    <string name="clear_calling_toggle">Use Clear Calling</string>
+    <string name="clear_calling_topintro">Reduces background noises during calls</string>
+
+    <!-- Dark UI text -->
+    <string name="dark_ui_text">Dark theme uses a black background to help keep your battery alive longer. Dark theme schedules wait to turn on until your screen is off.</string>
+
+    <!-- Title for preference showing the primary account on the device [CHAR LIMIT=60]-->
+    <string name="my_device_info_account_preference_title">Google Account</string>
+
+    <!-- String for talkback on the account avatar of the search bar.  [CHAR LIMIT=NONE] -->
+    <string name="search_bar_account_avatar_content_description">Profile picture, double tap to open Google Account</string>
+
+    <!-- Global Actions -->
+    <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
+    <string name="global_actions_advanced_reboot_summary">Show additional reboot options in power menu</string>
+
+    <!-- Elmyra -->
+    <!-- Entry points in Settings -->
+    <string name="elmyra_settings_entry_title">Active Edge</string>
+    <string name="elmyra_settings_entry_summary_on">On / <xliff:g id="action" example="Take screenshot">%1$s</xliff:g></string>
+    <string name="elmyra_settings_entry_summary_off">Off</string>
+
+    <!-- Items in Active Edge gesture settings -->
+    <string name="elmyra_setting_enabled_title">Squeeze phone to perform action</string>
+    <string name="elmyra_setting_enabled_summary">To perform an action, squeeze and release the sides of your phone near the bottom</string>
+    <string name="elmyra_setting_sensitivity_title">Sensitivity</string>
+    <string name="elmyra_setting_sensitivity_light">Light squeeze</string>
+    <string name="elmyra_setting_sensitivity_firm">Firm squeeze</string>
+    <string name="elmyra_setting_screen_off_title">Allow when screen is off</string>
+    <string name="elmyra_setting_screen_off_summary">May increase false triggers</string>
+    <string name="elmyra_setting_screen_off_blocked_summary">Blocked by current action</string>
+    <string name="elmyra_setting_action_title">On squeeze</string>
+
+    <string name="category_name_refresh_rate_controls">Refresh Rate</string>
+
+    <!-- Smart Pixels -->
+    <string name="smart_pixels_title">Smart Pixels</string>
+    <string name="smart_pixels_summary">Shut off pixels to reduce power consumption</string>
+    <string name="smart_pixels_on_power_save_title">Auto-enable on battery saver</string>
+    <string name="smart_pixels_on_power_save_summary">Use Smart Pixels when battery saver is enabled</string>
+    <string name="smart_pixels_percent">Percent of pixels to disable</string>
+    <string name="smart_pixels_shift">Prevent burn-in by shifting pixels every</string>
+    <string name="smart_pixels_warning_text">Smart Pixels is a power saving feature. Depending on how many pixels you decide to turn off, you could see a significant improvement in battery life. For a good user experience, we recommend setting the amount of disabled pixels to 75 percent while shifting every 10 minutes.</string>
+
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Icon manager</string>
+    <string name="icon_manager_summary">Control visibility of status bar icons</string>
+
+    <!-- Swipe to screenshot -->
+    <string name="swipe_to_screenshot_title">Swipe to screenshot</string>
+    <string name="swipe_to_screenshot_summary">Swipe 3 fingers down the screen to take a screenshot</string>
+
+    <!-- Torch Power button gestures -->
+    <string name="power_button_torch_title">Quick torch</string>
+    <string name="power_button_torch_summary">When the screen is off, long-pressing power button will enable torch</string>
+
+    <!-- Widgets on lock screen -->
+    <string name="enable_glanceable_hub_toggle_summary">Show widgets when device is locked</string>
+
+</resources>
