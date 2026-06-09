@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a58f5eb1_ffdf5bcd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000204
+      },
+      "writtenOn": "2026-06-09T09:00:17Z",
+      "side": 1,
+      "message": "Do I bump this to bp4a?",
+      "revId": "64e995e737ca1ba1c5b256007e2c5e121e3bf5b0",
+      "serverId": "039621b9-0c7c-40f3-867c-684f4bc911d6"
+    }
+  ]
+}
